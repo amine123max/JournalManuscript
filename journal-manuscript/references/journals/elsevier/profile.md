@@ -7,7 +7,9 @@ Use this profile when the target manuscript follows the Elsevier Family template
 ## Official Guide Display
 
 - Official guide page: Custom journal placeholder
+- Official template download: https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip
 - Downloaded guide file: `assets/official-templates/guides/elsevier/official-guide-source.txt`
+- Local cached template package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Guide note: no official guide exists for the custom-journal placeholder
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 

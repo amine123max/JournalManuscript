@@ -7,7 +7,9 @@ Use this profile when the target manuscript follows the AIP Family template fami
 ## Official Template Display
 
 - Official guide page: https://publishing.aip.org/resources/researchers/author-instructions/
+- Official template download: https://mirrors.ctan.org/macros/latex/contrib/revtex.zip
 - Downloaded guide file: `assets/official-templates/guides/aip/official-guide-source.html`
+- Local cached template package: `assets/official-templates/aip/template-package/`
 - Template basis: official AIP family class (`revtex4-2`) recorded in `verification.yaml`
 - Selected display baseline: `revtex4-2.cls` with AIP journal mode
 - Guide alignment: Use this family baseline only when the exact AIP target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live AIP guidance.

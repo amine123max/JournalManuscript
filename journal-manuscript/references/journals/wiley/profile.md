@@ -6,8 +6,10 @@ Use this profile when the target manuscript follows the Wiley Family template fa
 
 ## Official Template Display
 
-- Official guide page: https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html
+- Official guide page: https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/LaTeX/index.html
+- Official template download: https://authors.wiley.com/asset/WileyDesign.zip
 - Downloaded guide file: `assets/official-templates/guides/wiley/official-guide-source.html`
+- Local cached template package: `assets/official-templates/wiley/template-package/`
 - Template basis: Wiley PDF design official template package recorded in `verification.yaml`
 - Selected display baseline: `USG.cls` with `MPS` style option
 - Guide alignment: Use this family baseline only when the exact Wiley target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live Wiley guidance.

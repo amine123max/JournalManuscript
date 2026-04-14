@@ -2,5 +2,6 @@
   "family": "cambridge",
   "status": "guide_only",
   "official_source": "https://www.cambridge.org/core/services/authors/journals/journal-layout-and-templates",
-  "note": "Cambridge exposes journal-level template pages, but no single family package was confirmed in this environment."
+  "package_availability": "title_specific_templates",
+  "note": "Cambridge exposes journal layout and template resources through title-level pages, but this repository has not yet confirmed one reusable family-wide LaTeX package root."
 }

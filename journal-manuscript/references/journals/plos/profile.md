@@ -7,7 +7,9 @@ Use this profile when the target manuscript follows the PLOS Family template fam
 ## Official Guide Display
 
 - Official guide page: https://journals.plos.org/plosone/s/latex
+- Official template download: https://journals.plos.org/plosone/s/latex
 - Downloaded guide file: `assets/official-templates/guides/plos-one/official-guide-source.html`
+- Local cached template package: `assets/official-templates/plos/`
 - Local template package root: `assets/official-templates/plos/`
 - Primary sample manuscript: `assets/official-templates/plos/plos_latex_template.tex`
 - Guide note: this repository uses the PLOS ONE LaTeX page as the local PLOS family baseline because PLOS exposes LaTeX guidance through title-facing pages rather than one family-wide LaTeX portal

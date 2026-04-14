@@ -2,5 +2,6 @@
   "family": "oxford",
   "status": "guide_only",
   "official_source": "https://academic.oup.com/journals/pages/authors/preparing_your_manuscript",
-  "note": "Oxford exposes journal-level preparation pages, but no single family package was confirmed in this environment."
+  "package_availability": "official_family_template_exists_for_supported_titles",
+  "note": "The Oxford Academic author page states that supported journals can use the OUP LaTeX template via Overleaf, CTAN, or direct download, but coverage is title-specific and this repository has not yet materialized the family package locally."
 }

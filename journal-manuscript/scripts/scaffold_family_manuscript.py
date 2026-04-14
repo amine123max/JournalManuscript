@@ -50,6 +50,8 @@ class FamilyScaffoldConfig:
     display_name: str
     source_root: Path
     sample_tex: Path
+    official_source: str
+    package_url: str | None = None
     bibliography_style: str | None = None
     sample_bib: Path | None = None
     materialize_command: tuple[str, ...] = ()
@@ -61,6 +63,8 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
         display_name="IEEE Family",
         source_root=Path("assets/official-templates/ieee/template-package"),
         sample_tex=Path("bare_jrnl.tex"),
+        official_source="https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
+        package_url="https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip",
         bibliography_style="IEEEtran",
     ),
     "elsevier": FamilyScaffoldConfig(
@@ -68,6 +72,8 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
         display_name="Elsevier Family",
         source_root=Path("assets/official-templates/elsevier/elsarticle/elsarticle"),
         sample_tex=Path("elsarticle-template-num.tex"),
+        official_source="https://www.elsevier.com/en-gb/researcher/author/policies-and-guidelines/latex-instructions",
+        package_url="https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip",
         bibliography_style="elsarticle-num",
         materialize_command=("latex", "-interaction=nonstopmode", "elsarticle.ins"),
     ),
@@ -78,6 +84,8 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
             "assets/official-templates/springer/template-package/sn-article-template"
         ),
         sample_tex=Path("sn-article.tex"),
+        official_source="https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+        package_url="https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
         sample_bib=Path("sn-bibliography.bib"),
     ),
     "frontiers": FamilyScaffoldConfig(
@@ -85,6 +93,8 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
         display_name="Frontiers Family",
         source_root=Path("assets/official-templates/frontiers"),
         sample_tex=Path("frontiers.tex"),
+        official_source="https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
+        package_url="https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
         sample_bib=Path("test.bib"),
     ),
     "plos": FamilyScaffoldConfig(
@@ -92,6 +102,8 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
         display_name="PLOS Family",
         source_root=Path("assets/official-templates/plos"),
         sample_tex=Path("plos_latex_template.tex"),
+        official_source="https://journals.plos.org/plosone/s/latex",
+        package_url="https://journals.plos.org/plosone/s/latex",
         sample_bib=Path("plos_bibtex_sample.bib"),
     ),
     "wiley": FamilyScaffoldConfig(
@@ -101,6 +113,8 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
             "assets/official-templates/wiley/template-package/Optimal-Design-layout"
         ),
         sample_tex=Path("Optimal-Design-layout.tex"),
+        official_source="https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/LaTeX/index.html",
+        package_url="https://authors.wiley.com/asset/WileyDesign.zip",
         sample_bib=Path("wileyNJD-Chicago.bib"),
     ),
     "acs": FamilyScaffoldConfig(
@@ -108,12 +122,16 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
         display_name="ACS Family",
         source_root=Path("assets/official-templates/acs/template-package"),
         sample_tex=Path("achemso/achemso-demo.tex"),
+        official_source="https://pubs.acs.org/page/4authors/submission/tex.html",
+        package_url="https://mirrors.ctan.org/macros/latex/contrib/achemso.zip",
     ),
     "aip": FamilyScaffoldConfig(
         family="aip",
         display_name="AIP Family",
         source_root=Path("assets/official-templates/aip/template-package/revtex"),
         sample_tex=Path("sample/aip/aiptemplate.tex"),
+        official_source="https://publishing.aip.org/resources/researchers/author-instructions/",
+        package_url="https://mirrors.ctan.org/macros/latex/contrib/revtex.zip",
         sample_bib=Path("sample/aip/aipsamp.bib"),
     ),
 }
@@ -322,6 +340,7 @@ def write_readme_paper(
         f"- Generated at: {datetime.now(timezone.utc).isoformat()}",
         f"- Source template root: `{config.source_root.as_posix()}`",
         f"- Sample entry used: `{config.sample_tex.as_posix()}`",
+        f"- Official guide page: {config.official_source}",
         "",
         "## Expected Files",
         "",
@@ -349,6 +368,7 @@ def write_readme_paper(
         "## Notes",
         "",
         "- `main.tex` keeps the official sample structure as the writing baseline. Replace vendor demo prose section by section instead of rewriting everything in one pass.",
+        f"- Official template download: {config.package_url or config.official_source}",
         f"- {materialization_note}",
         "",
     ]
@@ -361,6 +381,8 @@ def write_family_manifest(config: FamilyScaffoldConfig, paper_dir: Path) -> None
         "display_name": config.display_name,
         "source_root": config.source_root.as_posix(),
         "sample_tex": config.sample_tex.as_posix(),
+        "official_source": config.official_source,
+        "package_url": config.package_url or config.official_source,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     }
     (paper_dir / "family-scaffold.json").write_text(

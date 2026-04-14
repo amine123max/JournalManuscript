@@ -7,7 +7,9 @@ Use this profile when the target manuscript follows the Frontiers Family templat
 ## Official Guide Display
 
 - Official guide page: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
+- Official template download: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
 - Downloaded guide file: `assets/official-templates/guides/frontiers/official-guide-source.zip`
+- Local cached template package: `assets/official-templates/frontiers/`
 - Local template package root: `assets/official-templates/frontiers/`
 - Primary sample manuscript: `assets/official-templates/frontiers/frontiers.tex`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready

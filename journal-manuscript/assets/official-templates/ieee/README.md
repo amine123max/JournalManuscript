@@ -11,7 +11,7 @@ This directory follows the standard local family-template structure used by this
 ## Source Basis
 
 - Official source: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
-- Package URL: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
+- Official template download: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
 
 ## Standard Entry Points
 

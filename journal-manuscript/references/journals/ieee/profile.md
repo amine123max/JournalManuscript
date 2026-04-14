@@ -10,7 +10,9 @@ Use this profile when the target manuscript follows the IEEE Family template fam
 ## Official Guide Display
 
 - Official guide page: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
+- Official template download: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
 - Downloaded guide file: `assets/official-templates/guides/ieee/official-guide-source.html`
+- Local cached template package: `assets/official-templates/ieee/template-package/`
 - Template basis: imported official IEEEtran package recorded in `verification.yaml`
 - Local template package root: `assets/official-templates/ieee/template-package/`
 - Primary sample manuscript: `assets/official-templates/ieee/template-package/bare_jrnl.tex`

@@ -7,7 +7,9 @@ Use this profile when the target manuscript follows the ACS Family template fami
 ## Official Template Display
 
 - Official guide page: https://pubs.acs.org/page/4authors/submission/tex.html
+- Official template download: https://mirrors.ctan.org/macros/latex/contrib/achemso.zip
 - Downloaded guide file: `assets/official-templates/guides/acs/official-guide-source.html`
+- Local cached template package: `assets/official-templates/acs/template-package/`
 - Template basis: official ACS family class (`achemso`) recorded in `verification.yaml`
 - Selected display baseline: `achemso.cls` in manuscript article mode
 - Guide alignment: Use this family baseline only when the exact ACS target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live ACS guidance.

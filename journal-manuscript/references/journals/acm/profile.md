@@ -7,7 +7,9 @@ Use this profile when the target manuscript follows the ACM Family template fami
 
 - Official ACM authoring guide: https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex
 - Official guide page: https://www.acm.org/publications/authors/submissions-top
+- Official template download: https://mirrors.ctan.org/macros/latex/contrib/acmart.zip
 - Downloaded guide file: `assets/official-templates/guides/acm/official-guide-source.html`
+- Local cached template package: `assets/official-templates/acm/template-package/`
 - Template basis: official ACM family class (`acmart`) recorded in `verification.yaml`
 - Selected display baseline: `acmart.cls` in manuscript mode (`CSUR`)
 - Guide alignment: Use this family baseline only when the exact ACM target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live ACM guidance.

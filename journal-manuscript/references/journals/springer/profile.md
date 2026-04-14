@@ -6,7 +6,9 @@ Use this profile when the target manuscript follows the Springer Family template
 ## Official Guide Display
 
 - Official guide page: https://www.springernature.com/gp/authors/campaigns/latex-author-support
+- Official template download: https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12
 - Downloaded guide file: `assets/official-templates/guides/springer/official-guide-source.html`
+- Local cached template package: `assets/official-templates/springer/template-package/sn-article-template/`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 - Springer Nature LaTeX author support and journal template resources

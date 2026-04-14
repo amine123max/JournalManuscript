@@ -139,7 +139,9 @@ For maintainers or users who need the complete catalog, clone this repository or
 - Windows: `C:\Users\<username>\.codex\skills\journal-manuscript`
 - macOS/Linux: `~/.codex/skills/journal-manuscript`
 
-After that, enable it through your Codex configuration and restart the client if needed.
+The packaged skill is not limited to one model family. The same install contains native Codex/OpenAI support plus portability configs for Claude, Gemini, OpenRouter, and local LLM wrappers under `journal-manuscript/agents/`.
+
+After installation, enable it through your Codex configuration and restart the client if needed. If you are using a non-Codex wrapper, point that wrapper at the same installed `journal-manuscript/` skill folder so it can reuse the shared journal-loading rules and profile metadata.
 
 If you want end users to download only one publisher family, use the minimal family package flow below instead of shipping the full library.
 
@@ -159,34 +161,34 @@ Click a family link below to download the corresponding minimal installation ZIP
 
 | Family | Download |
 | --- | --- |
-| `aaas` | [AAAS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-aaas.zip) |
-| `acm` | [ACM Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-acm.zip) |
-| `acs` | [ACS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-acs.zip) |
-| `aip` | [AIP Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-aip.zip) |
-| `bmc` | [BMC Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-bmc.zip) |
-| `cambridge` | [Cambridge Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-cambridge.zip) |
-| `cell-press` | [Cell Press Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-cell-press.zip) |
-| `copernicus` | [Copernicus Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-copernicus.zip) |
-| `custom-journal` | [Custom Journal Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-custom-journal.zip) |
-| `de-gruyter` | [De Gruyter Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-de-gruyter.zip) |
-| `elsevier` | [Elsevier Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-elsevier.zip) |
-| `emerald` | [Emerald Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-emerald.zip) |
-| `frontiers` | [Frontiers Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-frontiers.zip) |
-| `hindawi` | [Hindawi Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-hindawi.zip) |
-| `ieee` | [IEEE Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-ieee.zip) |
-| `iop` | [IOP Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-iop.zip) |
-| `mdpi` | [MDPI Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-mdpi.zip) |
-| `nas` | [NAS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-nas.zip) |
-| `nature-portfolio` | [Nature Portfolio Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-nature-portfolio.zip) |
-| `optica-publishing` | [Optica Publishing Group Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-optica-publishing.zip) |
-| `oxford` | [Oxford Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-oxford.zip) |
-| `plos` | [PLOS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-plos.zip) |
-| `royal-society` | [Royal Society Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-royal-society.zip) |
-| `sage` | [SAGE Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-sage.zip) |
-| `siam` | [SIAM Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-siam.zip) |
-| `springer` | [Springer Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-springer.zip) |
-| `taylor-francis` | [Taylor and Francis Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-taylor-francis.zip) |
-| `wiley` | [Wiley Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-wiley.zip) |
+| `aaas` | [AAAS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-aaas.zip) |
+| `acm` | [ACM Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-acm.zip) |
+| `acs` | [ACS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-acs.zip) |
+| `aip` | [AIP Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-aip.zip) |
+| `bmc` | [BMC Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-bmc.zip) |
+| `cambridge` | [Cambridge Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-cambridge.zip) |
+| `cell-press` | [Cell Press Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-cell-press.zip) |
+| `copernicus` | [Copernicus Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-copernicus.zip) |
+| `custom-journal` | [Custom Journal Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-custom-journal.zip) |
+| `de-gruyter` | [De Gruyter Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-de-gruyter.zip) |
+| `elsevier` | [Elsevier Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-elsevier.zip) |
+| `emerald` | [Emerald Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-emerald.zip) |
+| `frontiers` | [Frontiers Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-frontiers.zip) |
+| `hindawi` | [Hindawi Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-hindawi.zip) |
+| `ieee` | [IEEE Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-ieee.zip) |
+| `iop` | [IOP Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-iop.zip) |
+| `mdpi` | [MDPI Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-mdpi.zip) |
+| `nas` | [NAS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-nas.zip) |
+| `nature-portfolio` | [Nature Portfolio Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-nature-portfolio.zip) |
+| `optica-publishing` | [Optica Publishing Group Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-optica-publishing.zip) |
+| `oxford` | [Oxford Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-oxford.zip) |
+| `plos` | [PLOS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-plos.zip) |
+| `royal-society` | [Royal Society Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-royal-society.zip) |
+| `sage` | [SAGE Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-sage.zip) |
+| `siam` | [SIAM Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-siam.zip) |
+| `springer` | [Springer Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-springer.zip) |
+| `taylor-francis` | [Taylor and Francis Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-taylor-francis.zip) |
+| `wiley` | [Wiley Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-wiley.zip) |
 
 If you need to regenerate or refresh a package locally, use:
 
@@ -319,6 +321,10 @@ Shared loading behavior:
 - The package defaults to the official IEEE journal-family LaTeX baseline (`IEEEtran`) in the consuming workspace, then layers additional journal-specific requirements when needed.
 - The expanded journal library is intentionally broad, but only journals with verification records should be treated as officially audited paths.
 - Native Codex support still comes from `agents/openai.yaml`; the other files in `agents/` are portability configs for Claude, Gemini, OpenRouter, and local LLM wrappers rather than native Codex schema files.
+
+## License
+
+This repository is released under the MIT License. See `LICENSE`.
 
 
 

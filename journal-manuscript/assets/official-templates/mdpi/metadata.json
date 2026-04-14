@@ -2,5 +2,7 @@
   "family": "mdpi",
   "status": "blocked",
   "official_source": "https://www.mdpi.com/authors/latex",
-  "note": "The MDPI guide was access-restricted in this environment and no reusable local family package could be confirmed."
+  "package_availability": "official_page_exposes_template_downloads",
+  "package_url": "https://www.mdpi.com/authors/latex",
+  "note": "The official MDPI LaTeX page indicates downloadable standard and journal-specific template zip folders, but this repository has not yet materialized a reusable family package root from those assets."
 }

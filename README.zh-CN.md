@@ -139,7 +139,9 @@ Journal-manuscript/
 - Windows：`C:\Users\<你的用户名>\.codex\skills\journal-manuscript`
 - macOS/Linux：`~/.codex/skills/journal-manuscript`
 
-然后在 Codex 配置中启用，并按需要重启客户端。
+这个 skill 包并不只支持单一模型。当前安装内容同时包含原生 Codex/OpenAI 配置，以及放在 `journal-manuscript/agents/` 下的 Claude、Gemini、OpenRouter 和本地 LLM 包装层兼容配置。
+
+安装完成后，在 Codex 配置中启用并按需要重启客户端即可。如果你使用的是非 Codex 的包装层，也应让它指向同一个已安装的 `journal-manuscript/` skill 目录，这样它就能复用同一套期刊加载规则和 profile 元数据。
 
 如果你希望最终用户只下载某一个出版社 family，对外分发时应优先使用下面的 family 精简包流程，而不是整个完整库。
 
@@ -159,34 +161,34 @@ Family 精简包是面向最终用户的推荐下载格式。每个精简包都�
 
 | Family | 下载 |
 | --- | --- |
-| `aaas` | [下载 AAAS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-aaas.zip) |
-| `acm` | [下载 ACM Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-acm.zip) |
-| `acs` | [下载 ACS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-acs.zip) |
-| `aip` | [下载 AIP Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-aip.zip) |
-| `bmc` | [下载 BMC Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-bmc.zip) |
-| `cambridge` | [下载 Cambridge Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-cambridge.zip) |
-| `cell-press` | [下载 Cell Press Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-cell-press.zip) |
-| `copernicus` | [下载 Copernicus Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-copernicus.zip) |
-| `custom-journal` | [下载 Custom Journal Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-custom-journal.zip) |
-| `de-gruyter` | [下载 De Gruyter Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-de-gruyter.zip) |
-| `elsevier` | [下载 Elsevier Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-elsevier.zip) |
-| `emerald` | [下载 Emerald Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-emerald.zip) |
-| `frontiers` | [下载 Frontiers Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-frontiers.zip) |
-| `hindawi` | [下载 Hindawi Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-hindawi.zip) |
-| `ieee` | [下载 IEEE Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-ieee.zip) |
-| `iop` | [下载 IOP Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-iop.zip) |
-| `mdpi` | [下载 MDPI Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-mdpi.zip) |
-| `nas` | [下载 NAS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-nas.zip) |
-| `nature-portfolio` | [下载 Nature Portfolio Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-nature-portfolio.zip) |
-| `optica-publishing` | [下载 Optica Publishing Group Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-optica-publishing.zip) |
-| `oxford` | [下载 Oxford Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-oxford.zip) |
-| `plos` | [下载 PLOS Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-plos.zip) |
-| `royal-society` | [下载 Royal Society Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-royal-society.zip) |
-| `sage` | [下载 SAGE Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-sage.zip) |
-| `siam` | [下载 SIAM Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-siam.zip) |
-| `springer` | [下载 Springer Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-springer.zip) |
-| `taylor-francis` | [下载 Taylor and Francis Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-taylor-francis.zip) |
-| `wiley` | [下载 Wiley Family](https://github.com/amine123max/journal-manuscript/releases/latest/download/journal-manuscript-family-wiley.zip) |
+| `aaas` | [下载 AAAS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-aaas.zip) |
+| `acm` | [下载 ACM Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-acm.zip) |
+| `acs` | [下载 ACS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-acs.zip) |
+| `aip` | [下载 AIP Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-aip.zip) |
+| `bmc` | [下载 BMC Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-bmc.zip) |
+| `cambridge` | [下载 Cambridge Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-cambridge.zip) |
+| `cell-press` | [下载 Cell Press Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-cell-press.zip) |
+| `copernicus` | [下载 Copernicus Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-copernicus.zip) |
+| `custom-journal` | [下载 Custom Journal Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-custom-journal.zip) |
+| `de-gruyter` | [下载 De Gruyter Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-de-gruyter.zip) |
+| `elsevier` | [下载 Elsevier Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-elsevier.zip) |
+| `emerald` | [下载 Emerald Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-emerald.zip) |
+| `frontiers` | [下载 Frontiers Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-frontiers.zip) |
+| `hindawi` | [下载 Hindawi Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-hindawi.zip) |
+| `ieee` | [下载 IEEE Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-ieee.zip) |
+| `iop` | [下载 IOP Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-iop.zip) |
+| `mdpi` | [下载 MDPI Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-mdpi.zip) |
+| `nas` | [下载 NAS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-nas.zip) |
+| `nature-portfolio` | [下载 Nature Portfolio Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-nature-portfolio.zip) |
+| `optica-publishing` | [下载 Optica Publishing Group Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-optica-publishing.zip) |
+| `oxford` | [下载 Oxford Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-oxford.zip) |
+| `plos` | [下载 PLOS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-plos.zip) |
+| `royal-society` | [下载 Royal Society Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-royal-society.zip) |
+| `sage` | [下载 SAGE Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-sage.zip) |
+| `siam` | [下载 SIAM Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-siam.zip) |
+| `springer` | [下载 Springer Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-springer.zip) |
+| `taylor-francis` | [下载 Taylor and Francis Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-taylor-francis.zip) |
+| `wiley` | [下载 Wiley Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-wiley.zip) |
 
 如果你要在本地重新生成或刷新某个精简包，可使用：
 

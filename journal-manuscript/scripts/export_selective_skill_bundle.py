@@ -17,6 +17,9 @@ ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = ROOT.parent
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "dist"
 JOURNALS_DIR = ROOT / "references" / "journals"
+REPO_FILES = [
+    Path("LICENSE"),
+]
 
 CORE_FILES = [
     Path("SKILL.md"),
@@ -256,6 +259,13 @@ def copy_relative_path(relative_path: Path, destination_root: Path) -> None:
     shutil.copy2(source, destination)
 
 
+def copy_repo_relative_path(relative_path: Path, destination_root: Path) -> None:
+    source = REPO_ROOT / relative_path
+    destination = destination_root / relative_path
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source, destination)
+
+
 def write_bundle_manifest(
     bundle_root: Path,
     *,
@@ -329,6 +339,10 @@ def write_bundle_readmes(
         "- Windows: `C:\\Users\\<username>\\.codex\\skills\\journal-manuscript`",
         "- macOS/Linux: `~/.codex/skills/journal-manuscript`",
         "",
+        "The installed package includes native Codex/OpenAI support plus compatibility configs for Claude, Gemini, OpenRouter, and local LLM wrappers under `journal-manuscript/agents/`.",
+        "",
+        "License: MIT. See `LICENSE` at the package root.",
+        "",
         "This package supports only the journals and family profiles listed above.",
         "",
         "See `bundle-manifest.json` for the exact exported scope.",
@@ -357,6 +371,10 @@ def write_bundle_readmes(
         "",
         "- Windows：`C:\\Users\\<你的用户名>\\.codex\\skills\\journal-manuscript`",
         "- macOS/Linux：`~/.codex/skills/journal-manuscript`",
+        "",
+        "安装后的包同时包含原生 Codex/OpenAI 配置，以及 `journal-manuscript/agents/` 下的 Claude、Gemini、OpenRouter 和本地 LLM 包装层兼容配置。",
+        "",
+        "协议：MIT。请查看包根目录下的 `LICENSE`。",
         "",
         "这个包只支持上面列出的期刊和 family profile。",
         "",
@@ -506,6 +524,9 @@ def main() -> None:
     )
     bundle_root = output_dir / bundle_name
     prepare_bundle_root(bundle_root, force=args.force)
+
+    for relative_path in REPO_FILES:
+        copy_repo_relative_path(relative_path, bundle_root)
 
     destination_skill_root = bundle_root / "journal-manuscript"
     destination_skill_root.mkdir(parents=True, exist_ok=True)
