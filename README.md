@@ -76,8 +76,8 @@ Journal-manuscript/
     └── scripts/
         ├── README.md
         ├── export_selective_skill_bundle.py
-        ├── render_profile_preview_assets.py
-        └── render_official_template_preview_assets.py
+        ├── scaffold_family_manuscript.py
+        └── ...
 ```
 
 ## Consumer Manuscript Contract
@@ -125,12 +125,10 @@ The gallery below intentionally uses family-level official preview assets so the
 
 For the full library, browse `journal-manuscript/references/journals/` directly. Every family folder and journal folder contains `profile.md` and `official_preview.*`. Folders with a verification record also contain `verification.yaml`, and their verification scope defines whether the rendered asset is a conservative display page, an official family-template rendering, an official template-package rendering, or a blocked placeholder. For any cross-journal reuse of a family-level baseline, consult `family-template-sharing-tiers.*` first.
 
-## Maintenance Scripts
+## Main Scripts
 
 - `journal-manuscript/scripts/export_selective_skill_bundle.py`: builds a minimal distributable package that contains the selected family or journal library together with the required template assets.
-- `journal-manuscript/scripts/render_profile_preview_assets.py`: renders standardized `official_preview.*` assets for folders without `status: verified`.
-- `journal-manuscript/scripts/render_official_template_preview_assets.py`: refreshes verified `official_preview.*` assets and verification records for curated journals.
-- `journal-manuscript/scripts/README.md`: documents naming rules, output contracts, and typical commands.
+- `journal-manuscript/scripts/scaffold_family_manuscript.py`: creates a fresh `paper/` workspace from a supported family template baseline.
 
 ## Installation
 

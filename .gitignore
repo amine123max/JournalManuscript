@@ -1,3 +1,6 @@
 __pycache__/
 *.py[cod]
 dist/
+template-fetch-report.json
+template-fetch-summary.json
+template-link-candidates.json

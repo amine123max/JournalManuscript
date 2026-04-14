@@ -11,8 +11,9 @@ Use this profile when the target manuscript is intended for Transactions of the 
 ## Official Guide Display
 
 - Official guide page: https://journals.sagepub.com/author-instructions
-- Downloaded guide file: `assets/official-templates/guides/transactions-of-the-institute-of-measurement-and-control/official-guide-source.html`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Official template download: https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip
+- Local official template cache: `assets/official-templates/sage/journal-downloads/transactions-of-the-institute-of-measurement-and-control/template-package/`
+- Guide alignment: use the downloaded official SAGE template package together with the live SAGE author page before calling the layout submission-ready
 
 ## Journal Focus
 
@@ -28,4 +29,5 @@ Use this profile when the target manuscript is intended for Transactions of the 
 
 ## Safe Rule
 
-Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+Treat this file as a journal-level template-backed profile. The official SAGE template is now cached locally, but title-specific rules still need confirmation against the live SAGE author guidance.
+

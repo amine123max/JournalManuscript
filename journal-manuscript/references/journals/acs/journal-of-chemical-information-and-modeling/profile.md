@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Journal of Chemical 
 ## Official Template Display
 
 - Official guide page: https://pubs.acs.org/page/4authors/submission/tex.html
-- Downloaded guide file: `assets/official-templates/guides/journal-of-chemical-information-and-modeling/official-guide-source.html`
 - Template basis: official ACS family class (`achemso`) recorded in `verification.yaml`
 - Selected display baseline: `achemso.cls` in manuscript article mode
 - Guide alignment: Verify chemical-information-specific figure handling, supplementary information expectations, and journal-specific frontmatter before calling the layout submission-ready.
@@ -31,3 +30,4 @@ Use this profile when the target manuscript is intended for Journal of Chemical 
 ## Safe Rule
 
 Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+

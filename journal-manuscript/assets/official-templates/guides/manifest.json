@@ -1,450 +1,80 @@
 [
   {
-    "slug": "acm",
-    "official_source": "https://www.acm.org/publications/authors/submissions-top",
-    "download_url": "https://www.acm.org/publications/authors/submissions-top",
-    "downloaded_file": "acm/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "aaas"
   },
   {
-    "slug": "acm-computing-surveys",
-    "official_source": "https://www.acm.org/publications/authors/submissions-top",
-    "download_url": "https://www.acm.org/publications/authors/submissions-top",
-    "downloaded_file": "acm-computing-surveys/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "applied-sciences"
   },
   {
-    "slug": "acm-transactions-on-graphics",
-    "official_source": "https://www.acm.org/publications/authors/submissions-top",
-    "download_url": "https://www.acm.org/publications/authors/submissions-top",
-    "downloaded_file": "acm-transactions-on-graphics/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "cell"
   },
   {
-    "slug": "acs",
-    "official_source": "https://pubs.acs.org/page/4authors/submission/tex.html",
-    "download_url": "https://pubs.acs.org/page/4authors/submission/tex.html",
-    "downloaded_file": "acs/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "cell-press"
   },
   {
-    "slug": "acs-sensors",
-    "official_source": "https://pubs.acs.org/page/4authors/submission/tex.html",
-    "download_url": "https://pubs.acs.org/page/4authors/submission/tex.html",
-    "downloaded_file": "acs-sensors/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "custom-journal"
   },
   {
-    "slug": "aerospace-science-and-technology",
-    "official_source": "https://www.sciencedirect.com/journal/aerospace-science-and-technology/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/aerospace-science-and-technology/publish/guide-for-authors",
-    "downloaded_file": "aerospace-science-and-technology/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "de-gruyter"
   },
   {
-    "slug": "aip",
-    "official_source": "https://publishing.aip.org/resources/researchers/author-instructions/",
-    "download_url": "https://publishing.aip.org/resources/researchers/author-instructions/",
-    "downloaded_file": "aip/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "electronics"
   },
   {
-    "slug": "applied-ocean-research",
-    "official_source": "https://www.sciencedirect.com/journal/applied-ocean-research/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/applied-ocean-research/publish/guide-for-authors",
-    "downloaded_file": "applied-ocean-research/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "emerald"
   },
   {
-    "slug": "applied-physics-letters",
-    "official_source": "https://publishing.aip.org/resources/researchers/author-instructions/",
-    "download_url": "https://publishing.aip.org/resources/researchers/author-instructions/",
-    "downloaded_file": "applied-physics-letters/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "engineering-computation"
   },
   {
-    "slug": "applied-soft-computing",
-    "official_source": "https://www.sciencedirect.com/journal/applied-soft-computing/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/applied-soft-computing/publish/guide-for-authors",
-    "downloaded_file": "applied-soft-computing/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "hindawi"
   },
   {
-    "slug": "artificial-intelligence",
-    "official_source": "https://www.sciencedirect.com/journal/artificial-intelligence/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/artificial-intelligence/publish/guide-for-authors",
-    "downloaded_file": "artificial-intelligence/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "hindawi-complexity"
   },
   {
-    "slug": "automatica",
-    "official_source": "https://www.sciencedirect.com/journal/automatica/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/automatica/publish/guide-for-authors",
-    "downloaded_file": "automatica/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "international-journal-of-control"
   },
   {
-    "slug": "autonomous-robots",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "autonomous-robots/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "journal-of-marine-science-and-engineering"
   },
   {
-    "slug": "bmc",
-    "official_source": "https://www.biomedcentral.com/getpublished/manuscript-preparation",
-    "download_url": "https://www.biomedcentral.com/getpublished/manuscript-preparation",
-    "downloaded_file": "bmc/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "journal-of-nonlinear-sciences"
   },
   {
-    "slug": "bmc-bioinformatics",
-    "official_source": "https://www.biomedcentral.com/getpublished/manuscript-preparation",
-    "download_url": "https://www.biomedcentral.com/getpublished/manuscript-preparation",
-    "downloaded_file": "bmc-bioinformatics/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "machines"
   },
   {
-    "slug": "control-engineering-practice",
-    "official_source": "https://www.sciencedirect.com/journal/control-engineering-practice/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/control-engineering-practice/publish/guide-for-authors",
-    "downloaded_file": "control-engineering-practice/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "mdpi"
   },
   {
-    "slug": "engineering-applications-of-artificial-intelligence",
-    "official_source": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/publish/guide-for-authors",
-    "downloaded_file": "engineering-applications-of-artificial-intelligence/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "nas"
   },
   {
-    "slug": "expert-systems-with-applications",
-    "official_source": "https://www.sciencedirect.com/journal/expert-systems-with-applications/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/expert-systems-with-applications/publish/guide-for-authors",
-    "downloaded_file": "expert-systems-with-applications/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "pnas"
   },
   {
-    "slug": "frontiers-in-neurorobotics",
-    "official_source": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
-    "download_url": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
-    "downloaded_file": "frontiers-in-neurorobotics/official-guide-source.zip",
-    "content_type": "application/x-zip-compressed"
+    "slug": "remote-sensing"
   },
   {
-    "slug": "ieee",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "robotics"
   },
   {
-    "slug": "ieee-access",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-access/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "royal-society"
   },
   {
-    "slug": "ieee-asme-transactions-on-mechatronics",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-asme-transactions-on-mechatronics/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "royal-society-open-science"
   },
   {
-    "slug": "ieee-control-systems-letters",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-control-systems-letters/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "science"
   },
   {
-    "slug": "ieee-internet-of-things-journal",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-internet-of-things-journal/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "science-robotics"
   },
   {
-    "slug": "ieee-joe",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-joe/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "sensors"
   },
   {
-    "slug": "ieee-jstars",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-jstars/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-ral",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-ral/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-sensors-journal",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-sensors-journal/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-tcyb",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-tcyb/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-tits",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-tits/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-tnnls",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-tnnls/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-automation-science-and-engineering",
-    "official_source": "https://www.ieee-ras.org/publications/t-ase/information-for-authors-t-ase/author-checklist-for-papers-submitted-to-ieee-t-ase/",
-    "download_url": "https://www.ieee-ras.org/publications/t-ase/information-for-authors-t-ase/author-checklist-for-papers-submitted-to-ieee-t-ase/",
-    "downloaded_file": "ieee-transactions-on-automation-science-and-engineering/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-control-systems-technology",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-control-systems-technology/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-geoscience-and-remote-sensing",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-geoscience-and-remote-sensing/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-industrial-electronics",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-industrial-electronics/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-industrial-informatics",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-industrial-informatics/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-instrumentation-and-measurement",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-instrumentation-and-measurement/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-pattern-analysis-and-machine-intelligence",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-pattern-analysis-and-machine-intelligence/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-transactions-on-systems-man-and-cybernetics-systems",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-transactions-on-systems-man-and-cybernetics-systems/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ieee-tro",
-    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "download_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
-    "downloaded_file": "ieee-tro/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "information-sciences",
-    "official_source": "https://www.sciencedirect.com/journal/information-sciences/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/information-sciences/publish/guide-for-authors",
-    "downloaded_file": "information-sciences/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "isa-transactions",
-    "official_source": "https://www.sciencedirect.com/journal/isa-transactions/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/isa-transactions/publish/guide-for-authors",
-    "downloaded_file": "isa-transactions/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "journal-of-chemical-information-and-modeling",
-    "official_source": "https://pubs.acs.org/page/4authors/submission/tex.html",
-    "download_url": "https://pubs.acs.org/page/4authors/submission/tex.html",
-    "downloaded_file": "journal-of-chemical-information-and-modeling/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "journal-of-intelligent-and-robotic-systems",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "journal-of-intelligent-and-robotic-systems/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "journal-of-marine-science-and-technology",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "journal-of-marine-science-and-technology/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "machine-learning",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "machine-learning/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "measurement",
-    "official_source": "https://www.sciencedirect.com/journal/measurement/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/measurement/publish/guide-for-authors",
-    "downloaded_file": "measurement/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "nature",
-    "official_source": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
-    "download_url": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
-    "downloaded_file": "nature/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "nature-communications",
-    "official_source": "https://www.nature.com/ncomms/for-authors/formatting-guide",
-    "download_url": "https://www.nature.com/documents/ncomms-formatting-instructions.pdf",
-    "downloaded_file": "nature-communications/official-guide-source.pdf",
-    "content_type": "application/pdf"
-  },
-  {
-    "slug": "nature-portfolio",
-    "official_source": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
-    "download_url": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
-    "downloaded_file": "nature-portfolio/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "neural-computing-and-applications",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "neural-computing-and-applications/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "neurocomputing",
-    "official_source": "https://www.sciencedirect.com/journal/neurocomputing/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/neurocomputing/publish/guide-for-authors",
-    "downloaded_file": "neurocomputing/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ocean-dynamics",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "ocean-dynamics/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ocean-engineering",
-    "official_source": "https://www.sciencedirect.com/journal/ocean-engineering/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/ocean-engineering/publish/guide-for-authors",
-    "downloaded_file": "ocean-engineering/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "ocean-modelling",
-    "official_source": "https://www.sciencedirect.com/journal/ocean-modelling/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/ocean-modelling/publish/guide-for-authors",
-    "downloaded_file": "ocean-modelling/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "pattern-recognition",
-    "official_source": "https://www.sciencedirect.com/journal/pattern-recognition/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/pattern-recognition/publish/guide-for-authors",
-    "downloaded_file": "pattern-recognition/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "plos-one",
-    "official_source": "https://journals.plos.org/plosone/s/latex",
-    "download_url": "https://journals.plos.org/plosone/s/latex",
-    "downloaded_file": "plos-one/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "reliability-engineering-and-system-safety",
-    "official_source": "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety/publish/guide-for-authors",
-    "downloaded_file": "reliability-engineering-and-system-safety/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "robotics",
-    "official_source": "https://www.mdpi.com/journal/robotics/instructions",
-    "download_url": "https://res.mdpi.com/data/mdpi-author-layout-style-guide.pdf",
-    "downloaded_file": "robotics/official-guide-source.pdf",
-    "content_type": "application/pdf"
-  },
-  {
-    "slug": "robotics-and-autonomous-systems",
-    "official_source": "https://www.sciencedirect.com/journal/robotics-and-autonomous-systems/publish/guide-for-authors",
-    "download_url": "https://www.sciencedirect.com/journal/robotics-and-autonomous-systems/publish/guide-for-authors",
-    "downloaded_file": "robotics-and-autonomous-systems/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "scientific-reports",
-    "official_source": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
-    "download_url": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
-    "downloaded_file": "scientific-reports/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "soft-computing",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "soft-computing/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "springer",
-    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "download_url": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
-    "downloaded_file": "springer/official-guide-source.html",
-    "content_type": "text/html"
-  },
-  {
-    "slug": "wiley",
-    "official_source": "https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html",
-    "download_url": "https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html",
-    "downloaded_file": "wiley/official-guide-source.html",
-    "content_type": "text/html"
+    "slug": "taylor-francis"
   }
 ]

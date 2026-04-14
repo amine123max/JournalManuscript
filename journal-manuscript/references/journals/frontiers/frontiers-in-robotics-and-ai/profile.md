@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Frontiers in Robotic
 ## Official Guide Display
 
 - Official guide page: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
-- Downloaded guide file: `assets/official-templates/guides/frontiers-in-robotics-and-ai/official-guide-source.zip`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 ## Journal Focus
@@ -29,3 +28,4 @@ Use this profile when the target manuscript is intended for Frontiers in Robotic
 ## Safe Rule
 
 Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+

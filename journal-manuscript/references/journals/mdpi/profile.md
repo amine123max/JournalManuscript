@@ -36,3 +36,4 @@ Use this profile when the target manuscript follows the MDPI Family template fam
 ## Safe Rule
 
 Treat this file as a family-level guidance record, not as a reusable verified package baseline. For each MDPI journal, verify which end sections are mandatory and whether article-type labels, Overleaf workflow choices, or special reporting checklists are required.
+

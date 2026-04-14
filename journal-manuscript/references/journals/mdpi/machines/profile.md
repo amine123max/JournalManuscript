@@ -41,3 +41,4 @@ Use this profile when the target manuscript is intended for Machines.
 
 - MDPI family authoring has been verified at the publisher level
 - Final submission still needs the live Machines author page for article-type and checklist updates
+

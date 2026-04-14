@@ -2,5 +2,7 @@
   "family": "aaas",
   "status": "guide_only",
   "official_source": "https://www.science.org/content/page/science-information-authors",
-  "note": "No stable public family-level LaTeX package was confirmed in this environment."
+  "package_availability": "cloudflare_blocked_no_public_latex_zip_confirmed",
+  "external_template_evidence": "https://www.overleaf.com/latex/templates/intelligent-computing-template/mgrgsnvkxkks",
+  "note": "Science family author pages are currently Cloudflare-protected in this environment, and this repository has not yet confirmed a stable public official LaTeX zip for Science or Science Robotics. As external corroboration, AAAS Science Partner Journals do expose Overleaf templates, but that evidence does not yet establish an official direct template source for Science or Science Robotics."
 }

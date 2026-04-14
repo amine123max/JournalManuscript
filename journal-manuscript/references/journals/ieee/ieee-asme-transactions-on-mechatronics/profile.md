@@ -15,7 +15,6 @@ Use this profile when the target manuscript is intended for IEEE/ASME Transactio
 ## Official Guide Display
 
 - Official guide page: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
-- Downloaded guide file: `assets/official-templates/guides/ieee-asme-transactions-on-mechatronics/official-guide-source.html`
 - Template basis: official IEEE family class (`IEEEtran`) recorded in `verification.yaml`
 - Guide alignment: use this local guide file together with the live author page before calling the layout submission-ready
 
@@ -42,3 +41,4 @@ Use this profile when the target manuscript is intended for IEEE/ASME Transactio
 
 - IEEE family formatting has been verified at the publisher level
 - Final submission still requires the current journal author page for any joint IEEE/ASME notes, multimedia rules, or length constraints
+

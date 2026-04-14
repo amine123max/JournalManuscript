@@ -167,6 +167,15 @@ def supported_families_text() -> str:
     return ", ".join(sorted(FAMILY_CONFIGS))
 
 
+def read_text_with_fallback(path: Path) -> str:
+    for encoding in ("utf-8", "cp1252", "latin-1"):
+        try:
+            return path.read_text(encoding=encoding)
+        except UnicodeDecodeError:
+            continue
+    return path.read_text(encoding="utf-8", errors="replace")
+
+
 def should_skip(path: Path) -> bool:
     if any(part in EXCLUDED_DIR_NAMES for part in path.parts):
         return True
@@ -448,7 +457,7 @@ def scaffold_family(config: FamilyScaffoldConfig, paper_dir: Path) -> None:
     copy_tree_filtered(source_root, paper_dir)
 
     copied_sample = paper_dir / config.sample_tex
-    main_tex = copied_sample.read_text(encoding="utf-8")
+    main_tex = read_text_with_fallback(copied_sample)
     main_tex = normalize_bibliography(main_tex, config)
     main_tex = (
         f"% Family scaffold generated from {config.display_name}\n"

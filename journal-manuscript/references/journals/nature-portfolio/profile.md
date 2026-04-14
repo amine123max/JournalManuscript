@@ -6,7 +6,6 @@ Use this profile when the target manuscript follows the Nature Portfolio Family 
 ## Official Guide Display
 
 - Official guide page: https://www.nature.com/nature-portfolio/for-authors/formatting-guide
-- Downloaded guide file: `assets/official-templates/guides/nature-portfolio/official-guide-source.html`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 - Common template anchor: Nature Portfolio manuscript package or journal templates
@@ -26,3 +25,4 @@ Use this profile when the target manuscript follows the Nature Portfolio Family 
 
 - Official Springer Nature template assets are imported locally, and the displayed manuscript uses the `sn-jnl` Nature-style option shown in `verification.yaml`.
 - Use `verification.yaml` together with the live Nature Portfolio guidance before calling the layout submission-ready.
+

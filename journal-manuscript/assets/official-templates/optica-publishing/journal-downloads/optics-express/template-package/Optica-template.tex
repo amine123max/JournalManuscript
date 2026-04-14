@@ -1,0 +1,346 @@
+\documentclass{optica-article}
+
+\journal{opticajournal} % for journals or Optica Open
+
+\articletype{Research Article}
+
+\usepackage{lineno}
+\linenumbers % Turn off line numbering for Optica Open preprint submissions.
+
+\begin{document}
+
+\title{Universal manuscript template for Optica Publishing Group journals}
+
+\author{Author One,\authormark{1} Author Two,\authormark{2,*} and Author Three\authormark{2,3}}
+
+\address{\authormark{1}Peer Review, Publications Department, Optica Publishing Group, 2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+\authormark{2}Publications Department, Optica Publishing Group, 2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+\authormark{3}Currently with the Department of Electronic Journals, Optica Publishing Group, 2010 Massachusetts Avenue NW, Washington, DC 20036, USA}
+
+\email{\authormark{*}opex@optica.org} %% email address is required; see note below about the corresponding author designation
+
+% use {asbstract*} to suppress the copyright line. Copyright information will be added in production
+
+\begin{abstract*} 
+This template contains important information on submissions to Optica Publishing Group journals. We encourage authors to focus foremost on their content and not on formatting. The template is provided as a guide, but following the visual styling is optional. Each manuscript will be formatted in a consistent way during production. Authors also have the option to \href{https://opticaopen.org}{submit articles} to the Optica Publishing Group preprint server, \href{https://opticaopen.org/figshare}{Optica Open}. You may find it helpful to use our optional \href{https://preflight.paperpal.com/partner/optica/opticapublishinggroupjournals}{Paperpal manuscript readiness check}  and \href{https://languageediting.optica.org/}{language polishing service}. Note that copyright and licensing information should not be added to your journal or Optica Open manuscript. 
+
+\end{abstract*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%  body  %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+ We encourage authors preparing submissions to focus foremost on their content and not on formatting. This template is provided as a guide, but following the visual styling is optional. Each manuscript will be formatted in a consistent way during production. Authors also have the option to  \href{https://opticaopen.org}{submit articles} to the Optica Publishing Group preprint server, \href{https://preprints.opticaopen.org}{Optica Open}. You may find it helpful to use our optional \href{https://preflight.paperpal.com/partner/optica/opticapublishinggroupjournals}{Paperpal} manuscript readiness check and \href{https://languageediting.optica.org/}{language polishing service}.  
+
+\section{Corresponding author}
+
+We require manuscripts to identify only a single corresponding author. The corresponding author typically is the person who submits the manuscript and handles correspondence throughout the peer review and publication process. Alternatively, you may choose not to identify a corresponding author and instead use an author note to indicate equal author contributions. Only the corresponding author will have an asterisk attached to their e-mail address. Additional co-author e-mail addresses will have a superscript number in the numerical order of the affiliations. 
+
+\begin{verbatim}
+\author{Author One\authormark{1} and 
+Author Two\authormark{2,*}}
+
+\address{\authormark{1}Peer Review, Publications Department,
+Optica Publishing Group, 2010 Massachusetts Avenue NW,
+Washington, DC 20036, USA\\
+\authormark{2}Publications Department, Optica Publishing Group,
+2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+
+\email{\authormark{*}xyz@optica.org}
+\end{verbatim}
+
+This format will generate the following appearance:  
+
+\bigskip
+
+\author{Author One\authormark{1} and Author Two\authormark{2,*}}
+
+\address{\authormark{1}Peer Review, Publications Department,
+Optica Publishing Group, 2010 Massachusetts Avenue NW,
+Washington, DC 20036, USA\\
+\authormark{2}Publications Department, Optica Publishing Group,
+2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+%\authormark{3}xyz@optica.org}
+
+\email{\authormark{*}xyz@optica.org}}
+
+\medskip
+
+If other statements about author contribution and contact are needed, they can be added in addition to the corresponding author designation.
+\begin{verbatim}
+\author{Author One\authormark{1,$\dag$} and 
+Author Two\authormark{2,$\dag$,*}}
+
+\address{\authormark{1}Peer Review, Publications Department,
+Optica Publishing Group, 2010 Massachusetts Avenue NW,
+Washington, DC 20036, USA\\
+\authormark{2}Publications Department, Optica Publishing Group,
+2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+\authormark{$\dag$}The authors contributed equally to
+this work.\\
+\authormark{*}xyz@optica.org}}
+\end{verbatim}
+
+This format will generate the following appearance:
+
+\medskip
+
+\author{Author One\authormark{1,\dag} and Author Two\authormark{2,\dag,*}}
+
+\address{\authormark{1}Peer Review, Publications Department,
+Optica Publishing Group, 2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+\authormark{2}Publications Department, Optica Publishing Group, 2010 Massachusetts Avenue NW, Washington, DC 20036, USA\\
+\authormark{\dag}The authors contributed equally to this work.\\
+\authormark{*}xyz@optica.org}
+\medskip
+
+\section{Abstract}
+The abstract should be limited to approximately 100 words. If the work of another author is cited in the abstract, that citation is written out as, for example, Opt. Express {\bfseries 32}, 32643 (2024), and a separate citation should be included in the body of the text. The first reference cited in the main text must be [1].There is no need to include numbers, bullets, or lists inside the abstract. Do not add the licensing or copyright statement at submission.
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=7cm]{opticafig1}
+\caption{Sample caption (Fig. 2, \cite{Yelin:03}).}
+\end{figure}
+
+
+\section{Assessing final manuscript length}
+The Universal Manuscript Template is based on the Express journal layout and will provide an accurate length estimate for \emph{Optics Express}, \emph{Biomedical Optics Express},  \emph{Optical Materials Express}, \emph{Optica Quantum}, and \emph{Optics Continuum}. \emph{Applied Optics}, JOSAA, JOSAB, \emph{Optics Letters}, \emph{Optica}, \emph{Optica Quantum}, \emph{Optics Continuum}, and \emph{Photonics Research} publish articles in a two-column layout. To estimate the final page count in a two-column layout, multiply the manuscript page count (in increments of 1/4 page) by 60\%. For example, 11.5 pages in the Universal Manuscript Template are roughly equivalent to 7 composed two-column pages. Note that the estimate is only an approximation, as treatment of figure sizing, equation display, and other aspects can vary greatly across manuscripts. Authors of Letters may use the length-check template for a more-accurate length estimate.
+
+\section{Figures, tables, and supplementary materials}
+
+\subsection{Figures and tables}
+Figures and tables should be placed in the body of the manuscript. Standard \LaTeX{} environments should be used to place tables and figures:
+\begin{verbatim}
+\begin{figure}[htbp]
+\centering\includegraphics[width=7cm]{opticafig1}
+\caption{Sample caption (Fig. 2, \cite{Yelin:03}).}
+\end{figure}
+\end{verbatim}
+
+\noindent For figures that are being reprinted by permission of the publisher, include the permission line required by that publisher in the caption. Please refer to the information on \href{https://opg.optica.org/content/author/portal/item/review-permissions-reprints/}{permissions and reprints} for guidance on figure permissions and image use.
+
+To meet accessibility requirements, do not rely solely on color to identify elements in figures (such as blue and red curves). Instead, use shapes or other features along with color. For example, you can use dashed and dotted lines, different shapes for data points, text labels pointing to the color features, numbering, etc. 
+
+Table \ref{tab:shape-functions}, below, provides a formatting example. Note that tables should have titles and not captions. To include additional information, use footnotes as shown in this example:
+
+\smallskip
+
+\begin{table}[htbp]
+\caption{Shape Functions for Quadratic Line Elements}
+  \label{tab:shape-functions}
+  \centering
+\begin{tabular}{ccc}
+\hline
+Local Node & $\{N\}_m$ & $\{\Phi_i\}_m$ $(i=x,y,z)$ \\
+\hline
+$m = 1$ & $L_1(2L_1-1)$ & $\Phi_{i1}$ \\
+$m = 2$ & $L_2(2L_2-1)$ & $\Phi_{i2}$ \\
+$m = 3$ & $L_3=4L_1L_2$ & $\Phi_{i3}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\noindent See Table \ref{tab:example2} for examples of how to format different types of table cells.
+
+\clearpage
+
+ \begin{table}[htbp]
+	\caption{Examples of Table Markup$^{a,b}$}
+	\label{tab:example2}
+ \centering
+\begin{tabularx}{1\textwidth}{ >{\centering\arraybackslash}X | >{\centering\arraybackslash}X | >{\centering\arraybackslash}X | >{\centering\arraybackslash}X | >{\centering\arraybackslash}X}
+\hline
+\multicolumn{5}{c}{\bfseries Ten normal cells}\\
+\hline
+cell1 & cell2 & cell3 & cell4 & cell5\\
+\hline
+cell6 & cell7 & cell8 & cell9 & cell10\\
+\hline
+\multicolumn{5}{c}{\bfseries cell1 and cell2 merged.}\\
+\hline
+\multicolumn{2}{ c |}{cell1 and cell2}& cell3 & cell4 & cell5\\
+\hline
+cell6 & cell7 & cell8 & cell9 & cell10\\
+\hline
+\multicolumn{5}{c}{\bfseries cell1 and cell6 merged}\\
+\hline
+\multirow{2}{*}{\shortstack{cell1\\ cell6}} & cell2 & cell3 & cell4 & cell5\\
+\cline{2-5}
+& cell7 & cell8 & cell9 & cell10\\
+\hline
+\multicolumn{5}{c}{\bfseries A mix of the two over twenty cells}\\
+\hline
+\multicolumn{2}{ c |}{cell1 and cell2} & cell3 & cell4 & cell5\\
+\hline
+\multirow{3}{*}{\shortstack{cell6\\ cell11\\ cell16}} & cell7 & cell8 & cell9 & cell10\\
+\cline{2-5}
+& cell12 & cell13 & cell14 & cell15\\
+\cline{2-5}
+& cell17 & cell18 & cell19 & cell20\\
+\hline
+\multicolumn{5}{c}{\bfseries Math environments in merged cells}\\
+\hline
+cell1 & cell2 & cell3 & \multicolumn{2}{ c }{\multirow{2}{*}{$\frac{-b \pm \sqrt{b^2-4ac}}{2a}$}}\\
+\cline{1-3}
+cell6 & cell7 & cell8 & \multicolumn{2}{ c }{} \\
+\hline
+\end{tabularx}
+
+$^a$Please see the source of this file for macros used.\\
+$^b$You can find further table support at \href{https://www.overleaf.com/learn/latex/Tables}{Overleaf}.
+\end{table}
+
+\subsection{Supplementary materials in Optica Publishing Group journals}
+Our journals allow authors to include supplementary materials as integral parts of a manuscript. Such materials are subject to peer-review procedures along with the rest of the paper and should be uploaded and described using our Prism manuscript system. Please refer to the \href{https://opg.optica.org/submit/style/supplementary_materials.cfm}{Author Guidelines for Supplementary Materials in Optica Publishing Group Journals} for more information on labeling supplementary materials and your manuscript. For preprints submitted to Optica Open a link to supplemental material should be included in the submission.
+
+\textbf{Authors may also include Supplemental Documents} (PDF documents with expanded descriptions or methods) with the primary manuscript. At this time, supplemental PDF files are not accepted for partner titles, JOCN and \emph{Photonics Research}. 
+
+\subsection{Sample Dataset Citation}
+
+\begin{enumerate}
+\item M. Partridge, "Spectra evolution during coating," figshare (2014), \url{http://doi.org/10.6084/m9.figshare.1004612}.   
+\end{enumerate}
+
+\subsection{Sample Code Citation}
+
+\begin{enumerate}
+\item C. Rivers, "Epipy: Python tools for epidemiology," figshare (2014), 
+\url{http://doi.org/10.6084/m9.figshare.1005064}.
+\end{enumerate}
+
+\section{Mathematical and scientific notation}
+
+\subsection{Displayed equations} Displayed equations should be centered.
+Equation numbers should appear at the right-hand margin, in
+parentheses:
+\begin{equation}
+J(\rho) =
+ \frac{\gamma^2}{2} \; \sum_{k({\rm even}) = -\infty}^{\infty}
+	\frac{(1 + k \tau)}{ \left[ (1 + k \tau)^2 + (\gamma  \rho)^2  \right]^{3/2} }.
+\end{equation}
+
+All equations should be numbered in the order in which they appear
+and should be referenced  from within the main text as Eq. (1),
+Eq. (2), and so on [or as inequality (1), etc., as appropriate].
+
+\section{Back matter}
+
+Back matter sections should be listed in the order Funding/Acknowledgment/Disclosures/Data Availability Statement/Supplemental Document section. An example of back matter with each of these sections included is shown below. The section titles should not follow the numbering scheme of the body of the paper. 
+
+\begin{backmatter}
+\bmsection{Funding}
+Content in the funding section will be generated entirely from details submitted to Prism. Authors may add placeholder text in this section to assess length, but any text added to this section will be replaced during production and will display official funder names along with any grant numbers provided. If additional details about a funder are required, they may be added to the Acknowledgment, even if this duplicates some information in the funding section. For preprint submissions, please include funder names and grant numbers in the manuscript.
+
+\bmsection{Acknowledgment}
+Additional information crediting individuals who contributed to the work being reported, clarifying who received funding from a particular source, or other information that does not fit the criteria for the funding block may also be included; for example, ``K. Flockhart thanks the National Science Foundation for help identifying collaborators for this work.'' 
+
+\bmsection{Disclosures}
+Disclosures should be listed in a separate nonnumbered section at the end of the manuscript. List the Disclosures codes identified on the \href{https://opg.optica.org/submit/review/conflicts-interest-policy.cfm}{Conflict of Interest policy page}, as shown in the examples below:
+
+\medskip
+
+\noindent ABC: 123 Corporation (I,E,P), DEF: 456 Corporation (R,S). GHI: 789 Corporation (C).
+
+\medskip
+
+\noindent If there are no disclosures, then list ``The authors declare no conflicts of interest.''
+
+
+\bmsection{Data Availability Statement}
+A Data Availability Statement (DAS) is required for all submissions (except JOCN papers). The DAS should be an unnumbered separate section titled ``Data availability'' that
+immediately follows the Disclosures section. See the \href{https://opg.optica.org/submit/review/data-availability-policy.cfm}{Data Availability Statement policy page} for more information.
+
+Optica has identified four common (sometimes overlapping) situations that authors should use as guidance. These are provided as minimal models. You may paste the appropriate statement into your submission and include any additional details that may be relevant.
+
+\begin{enumerate}
+\item When datasets are included as integral supplementary material in the paper, they must be declared (e.g., as "Dataset 1" following our current supplementary materials policy) and cited in the DAS, and should appear in the references.
+
+\bmsection{Data availability} Data underlying the results presented in this paper are available in Dataset 1, Ref. [8].
+
+\bigskip
+
+\item When datasets are cited but not submitted as integral supplementary material, they must be cited in the DAS and should appear in the references.
+
+\bmsection{Data availability} Data underlying the results presented in this paper are available in Ref. [8].
+
+\bigskip
+
+\item If the data generated or analyzed as part of the research are not publicly available, that should be stated. Authors are encouraged to explain why (e.g.~the data may be restricted for privacy reasons), and how the data might be obtained or accessed in the future.
+
+\bmsection{Data availability} Data underlying the results presented in this paper are not publicly available at this time but may be obtained from the authors upon reasonable request.
+
+\bigskip
+
+\item If no data were generated or analyzed in the presented research, that should be stated.
+
+\bmsection{Data availability} No data were generated or analyzed in the presented research.
+\end{enumerate}
+
+\bigskip
+
+\noindent Data availability statements are not required for preprint submissions.
+
+\bmsection{Supplemental document}
+A supplemental document must be called out in the back matter so that a link can be included. For example, “See Supplement 1 for supporting content.” Note that the Supplemental Document must also have a callout in the body of the paper.
+
+\end{backmatter}
+
+\section{References}
+\label{sec:refs}
+Proper formatting of references is important, not only for consistent appearance but also for accurate electronic tagging. Please follow the guidelines provided below on formatting, callouts, and use of Bib\TeX.
+
+\subsection{Formatting reference items}
+Each source must have its own reference number. Footnotes (notes at the bottom of text pages) are not used in our journals. List up to three authors, and if there are more than three use \emph{et al.} after that. Examples of common reference types can be found in the  \href{https://opg.optica.org/jot/submit/style/oestyleguide.cfm} {Author Style Guide}.
+
+
+The commands \verb+\begin{thebibliography}{}+ and \verb+\end{thebibliography}+ format the section according to standard style, showing the title\\
+{\bfseries References}.  Use the \verb+\bibitem{label}+ command to start each reference.
+
+\subsection{Formatting reference citations}
+References should be numbered consecutively in the order in which they are referenced in the body of the paper. Set reference callouts with standard \verb+\cite{}+ command or set manually inside square brackets [1].
+
+To reference multiple articles at once, simply use a comma to separate the reference labels, e.g. \verb+\cite{Yelin:03,Masajada:13,Zhang:14}+, produces \cite{Yelin:03,Masajada:13,Zhang:14}.
+%Using the \texttt{cite.sty} package will make these citations appear like so: [2--4].
+
+\subsection{Bib\TeX}
+\label{sec:bibtex}
+Bib\TeX{} may be used to create a file containing the references, whose contents (i.e., contents of \texttt{.bbl} file) can then be pasted into the bibliography section of the \texttt{.tex} file. A Bib\TeX{} style file, \texttt{opticajnl.bst}, is provided.
+
+If your manuscript already contains a manually formatted \verb|\begin{thebibliography}|... \verb|\end{thebibliography}| list, then delete the \texttt{latexmkrc} file (if present) from your submission files. 
+
+\section{Conclusion}
+After proofreading the manuscript, compress your .tex manuscript file and all figures (which should be in EPS or PDF format) in a ZIP, TAR, or TAR-GZIP package. All files must be referenced at the root level (e.g., file \texttt{figure-1.eps}, not \texttt{/myfigs/figure-1.eps}). If there are supplementary materials, the associated files should not be included in your manuscript archive but be uploaded separately through the Prism interface.
+
+%%%%%%%%%%%%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%
+
+Add references with BibTeX or manually 
+\cite{Zhang:14,OPTICA,FORSTER2007,Dean2006,testthesis,Yelin:03,Masajada:13,codeexample}.
+
+%%%%%%%%%% If using BibTeX:
+\bibliography{sample}
+
+%%%%%%%%%% If preparing manually:
+% \begin{thebibliography}{1}
+% \newcommand{\enquote}[1]{``#1''}
+
+% \bibitem{Zhang:14}
+% Y.~Zhang, S.~Qiao, L.~Sun, Q.~W. Shi, W.~Huang, L.~Li, and Z.~Yang,
+%   \enquote{Photoinduced active terahertz metamaterials with nanostructured
+%   vanadium dioxide film deposited by sol-gel method,}
+%   {\protect\JournalTitle{Optics Express}} \textbf{22}, 11070--11078 (2014).
+
+% \bibitem{Optica}
+% {Optica}, \enquote{{Optica Publishing Group},}
+%   \url{http://www.opg.optica.org}.
+
+% \bibitem{FORSTER2007}
+% P.~Forster, V.~Ramaswamy, P.~Artaxo, T.~Bernsten, R.~Betts, D.~Fahey,
+%   J.~Haywood, J.~Lean, D.~Lowe, G.~Myhre, J.~Nganga, R.~Prinn, G.~Raga,
+%   M.~Schulz, and R.~V. Dorland, \enquote{Changes in atmospheric consituents and
+%   in radiative forcing,} in \enquote{Climate Change 2007: The Physical Science
+%   Basis. Contribution of Working Group 1 to the Fourth Assesment Report of
+%   Intergovernmental Panel on Climate Change,}  S.~Solomon, D.~Qin, M.~Manning,
+%   Z.~Chen, M.~Marquis, K.~B. Averyt, M.~Tignor, and H.~L. Miler, eds.
+%   (Cambridge University Press, 2007).
+
+% \end{thebibliography}
+
+\end{document}

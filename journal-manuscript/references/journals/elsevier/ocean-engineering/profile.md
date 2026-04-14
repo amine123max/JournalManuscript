@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Ocean Engineering.
 
 - Elsevier LaTeX instructions: `elsarticle.zip`
 - Official guide page: https://www.sciencedirect.com/journal/ocean-engineering/publish/guide-for-authors
-- Downloaded guide file: `assets/official-templates/guides/ocean-engineering/official-guide-source.html`
 - Imported local package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Selected display baseline: `elsarticle-template-harv.tex`
 - Guide alignment: The Ocean Engineering guide uses author-year citation examples, so the author-year Elsevier sample is the closest imported official match.
@@ -32,3 +31,4 @@ Use this profile when the target manuscript is intended for Ocean Engineering.
 
 - Official Elsevier template assets are imported locally, and the displayed manuscript uses the selected `elsarticle` sample shown above.
 - Use `verification.yaml` together with the live Guide for Authors before calling the layout submission-ready.
+

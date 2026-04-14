@@ -16,7 +16,6 @@ Use this profile when the target manuscript is intended for Applied Soft Computi
 
 - Elsevier LaTeX instructions: `elsarticle.zip`
 - Official guide page: https://www.sciencedirect.com/journal/applied-soft-computing/publish/guide-for-authors
-- Downloaded guide file: `assets/official-templates/guides/applied-soft-computing/official-guide-source.html`
 - Imported local package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Selected display baseline: `elsarticle-template-num.tex`
 - Guide alignment: The Applied Soft Computing guide uses numbered square-bracket citations, so the numeric Elsevier sample is the closest imported official match.
@@ -43,3 +42,4 @@ Use this profile when the target manuscript is intended for Applied Soft Computi
 
 - Official Elsevier template assets are imported locally, and the displayed manuscript uses the selected `elsarticle` sample shown above.
 - Use `verification.yaml` together with the live Guide for Authors before calling the layout submission-ready.
+

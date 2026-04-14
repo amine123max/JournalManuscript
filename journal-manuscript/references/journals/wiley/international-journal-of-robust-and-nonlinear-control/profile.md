@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for International Journa
 ## Official Template Display
 
 - Official guide page: https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html
-- Downloaded guide file: `assets/official-templates/guides/international-journal-of-robust-and-nonlinear-control/official-guide-source.html`
 - Template basis: Wiley PDF design official template package recorded in `verification.yaml`
 - Selected display baseline: `USG.cls` with `MPS` style option
 - Guide alignment: Verify theorem environments, bibliography mode, and author note structure before calling the layout submission-ready.
@@ -32,3 +31,4 @@ Use this profile when the target manuscript is intended for International Journa
 
 - Official Wiley template assets are imported locally, and the displayed manuscript uses the template package and style option recorded in `verification.yaml`.
 - Use `verification.yaml` together with the live Wiley guidance before calling the layout submission-ready.
+

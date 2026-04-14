@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Measurement Science 
 ## Official Guide Display
 
 - Official guide page: https://publishingsupport.iopscience.iop.org/questions/latex-guidelines-and-class-files/
-- Downloaded guide file: `assets/official-templates/guides/measurement-science-and-technology/official-guide-source.txt`
 - Guide note: Automatic download failed in this environment (CalledProcessError); keep the official guide URL shortcut and use the recorded page manually.
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
@@ -30,3 +29,4 @@ Use this profile when the target manuscript is intended for Measurement Science 
 ## Safe Rule
 
 Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+

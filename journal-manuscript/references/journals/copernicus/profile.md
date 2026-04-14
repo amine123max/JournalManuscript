@@ -7,7 +7,6 @@ Use this profile when the target manuscript follows the Copernicus Family templa
 ## Official Guide Display
 
 - Official guide page: https://publications.copernicus.org/for_authors/manuscript_preparation.html
-- Downloaded guide file: `assets/official-templates/guides/copernicus/official-guide-source.html`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 - Common template anchor: Copernicus journal templates
@@ -26,3 +25,4 @@ Use this profile when the target manuscript follows the Copernicus Family templa
 ## Safe Rule
 
 Treat this file as a family baseline and verify the concrete journal template before making high-risk layout changes.
+

@@ -7,8 +7,9 @@ Use this profile when the target manuscript follows the SAGE Family template fam
 ## Official Guide Display
 
 - Official guide page: https://journals.sagepub.com/author-instructions
-- Downloaded guide file: `assets/official-templates/guides/sage/official-guide-source.html`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Official template download: https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip
+- Local title-level template cache: `assets/official-templates/sage/journal-downloads/`
+- Guide alignment: use the local official template package as the nearest official reference before calling the layout submission-ready
 
 - Common template anchor: SAGE journal template or class package
 - Common traits: publisher-specific title page conventions, citation modes, and submission declarations
@@ -26,3 +27,4 @@ Use this profile when the target manuscript follows the SAGE Family template fam
 ## Safe Rule
 
 Treat this file as a family baseline and verify the concrete journal template before making high-risk layout changes.
+

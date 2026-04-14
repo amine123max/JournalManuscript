@@ -6,7 +6,6 @@ Use this profile when the target manuscript follows the BMC Family template fami
 ## Official Guide Display
 
 - Official guide page: https://www.biomedcentral.com/getpublished/manuscript-preparation
-- Downloaded guide file: `assets/official-templates/guides/bmc/official-guide-source.html`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 - Common template anchor: BMC journal templates
@@ -26,3 +25,4 @@ Use this profile when the target manuscript follows the BMC Family template fami
 
 - Official Springer Nature template assets are imported locally, and the displayed manuscript uses the `sn-jnl` package shown in `verification.yaml`.
 - Use `verification.yaml` together with the live BMC guidance before calling the layout submission-ready.
+

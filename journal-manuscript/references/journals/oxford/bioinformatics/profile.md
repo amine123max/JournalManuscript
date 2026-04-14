@@ -11,8 +11,9 @@ Use this profile when the target manuscript is intended for Bioinformatics.
 ## Official Guide Display
 
 - Official guide page: https://academic.oup.com/journals/pages/authors/preparing_your_manuscript
-- Downloaded guide file: `assets/official-templates/guides/bioinformatics/official-guide-source.html`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Official template download: https://mirrors.ctan.org/macros/latex/contrib/oup-authoring-template.zip
+- Local official template cache: `assets/official-templates/oxford/journal-downloads/bioinformatics/template-package/`
+- Guide alignment: use the downloaded official OUP template package together with the live Oxford author page before calling the layout submission-ready
 
 ## Journal Focus
 
@@ -28,4 +29,6 @@ Use this profile when the target manuscript is intended for Bioinformatics.
 
 ## Safe Rule
 
-Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+Treat this file as a journal-level template-backed profile. The official OUP template is now cached locally, but title-specific rules still need confirmation against the live Oxford author guidance.
+
+

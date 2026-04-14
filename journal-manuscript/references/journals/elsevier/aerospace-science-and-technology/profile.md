@@ -16,7 +16,6 @@ Use this profile when the target manuscript is intended for Aerospace Science an
 
 - Elsevier LaTeX instructions: `elsarticle.zip`
 - Official guide page: https://www.sciencedirect.com/journal/aerospace-science-and-technology/publish/guide-for-authors
-- Downloaded guide file: `assets/official-templates/guides/aerospace-science-and-technology/official-guide-source.html`
 - Imported local package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Selected display baseline: `elsarticle-template-num.tex`
 - Guide alignment: Use the imported numeric Elsevier sample until the live guide indicates a different citation mode or journal-specific manuscript variant.
@@ -43,3 +42,4 @@ Use this profile when the target manuscript is intended for Aerospace Science an
 
 - Official Elsevier template assets are imported locally, and the displayed manuscript uses the selected `elsarticle` sample shown above.
 - Use `verification.yaml` together with the live Guide for Authors before calling the layout submission-ready.
+

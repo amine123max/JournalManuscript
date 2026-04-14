@@ -16,7 +16,6 @@ Use this profile when the target manuscript is intended for Ocean Dynamics.
 ## Official Guide Display
 
 - Official guide page: https://www.springernature.com/gp/authors/campaigns/latex-author-support
-- Downloaded guide file: `assets/official-templates/guides/ocean-dynamics/official-guide-source.html`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 ## Refined Format Notes
@@ -41,3 +40,4 @@ Use this profile when the target manuscript is intended for Ocean Dynamics.
 
 - Springer family authoring has been verified at the publisher level
 - Final submission still needs the current Ocean Dynamics package and author page for title-specific requirements
+

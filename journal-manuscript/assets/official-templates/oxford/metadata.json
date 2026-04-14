@@ -1,7 +1,14 @@
 {
   "family": "oxford",
-  "status": "guide_only",
+  "status": "guide_only_with_journal_downloads",
   "official_source": "https://academic.oup.com/journals/pages/authors/preparing_your_manuscript",
-  "package_availability": "official_family_template_exists_for_supported_titles",
-  "note": "The Oxford Academic author page states that supported journals can use the OUP LaTeX template via Overleaf, CTAN, or direct download, but coverage is title-specific and this repository has not yet materialized the family package locally."
+  "package_availability": "journal_specific_template_sources_confirmed",
+  "journal_download_root": "assets/official-templates/oxford/journal-downloads",
+  "confirmed_journal_template_sources": [
+    "bioinformatics"
+  ],
+  "downloaded_journal_templates": [
+    "bioinformatics"
+  ],
+  "note": "The Oxford Academic author page states that supported journals can use the OUP LaTeX template via Overleaf, CTAN, or direct download. This repository has now downloaded the journal-level CTAN zip source for Bioinformatics, but it still does not treat Oxford as one reusable family-wide package root."
 }

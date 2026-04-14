@@ -2,5 +2,7 @@
   "family": "royal-society",
   "status": "guide_only",
   "official_source": "https://royalsocietypublishing.org/for-authors/author-guidelines",
-  "note": "Royal Society exposes author guidance, but no single reusable family package was confirmed in this environment."
+  "package_availability": "author_guidance_accessible_no_public_latex_zip_confirmed",
+  "external_template_evidence": "https://www.overleaf.com/latex/templates/royal-society-open-science-template/mxtbwxgrjmtj",
+  "note": "Royal Society author guidance was prioritized during the journal-template scan, but this repository has not yet confirmed a stable public official LaTeX zip for Royal Society Open Science. As external corroboration, an Overleaf template for Royal Society Open Science developed by Techset is publicly visible."
 }

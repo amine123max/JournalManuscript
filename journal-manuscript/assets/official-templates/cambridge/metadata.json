@@ -1,7 +1,16 @@
 {
   "family": "cambridge",
-  "status": "guide_only",
+  "status": "guide_only_with_journal_downloads",
   "official_source": "https://www.cambridge.org/core/services/authors/journals/journal-layout-and-templates",
   "package_availability": "title_specific_templates",
-  "note": "Cambridge exposes journal layout and template resources through title-level pages, but this repository has not yet confirmed one reusable family-wide LaTeX package root."
+  "journal_download_root": "assets/official-templates/cambridge/journal-downloads",
+  "confirmed_journal_template_sources": [
+    "journal-of-fluid-mechanics",
+    "robotica"
+  ],
+  "downloaded_journal_templates": [
+    "journal-of-fluid-mechanics",
+    "robotica"
+  ],
+  "note": "Cambridge exposes journal layout and template resources through title-level pages. This repository has now downloaded direct official zip packages for Journal of Fluid Mechanics and Robotica, but not one reusable family-wide package root."
 }

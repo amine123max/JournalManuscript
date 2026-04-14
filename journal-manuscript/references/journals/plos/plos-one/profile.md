@@ -10,7 +10,6 @@ Use this profile when the target manuscript is intended for PLOS ONE.
 ## Official Template Display
 
 - Official template page: https://journals.plos.org/plosone/s/latex
-- Downloaded guide file: `assets/official-templates/guides/plos-one/official-guide-source.html`
 - Imported local package: `assets/official-templates/plos/`
 - Selected display baseline: `plos_latex_template.tex`
 - Guide alignment: the current verified preview keeps the manuscript-style submission flow, including separate-asset figure treatment and explicit front matter
@@ -30,3 +29,4 @@ Use this profile when the target manuscript is intended for PLOS ONE.
 
 - Official PLOS template assets are imported locally, and the displayed manuscript uses the package baseline shown above.
 - Use `verification.yaml` together with the live author guidance before calling the layout submission-ready.
+

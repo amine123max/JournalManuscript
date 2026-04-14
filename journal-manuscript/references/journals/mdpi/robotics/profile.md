@@ -40,3 +40,4 @@ Use this profile when the target manuscript is intended for Robotics.
 
 - MDPI family conventions are available as a publisher baseline, but the journal-specific Robotics template path is still blocked locally.
 - Do not label this journal official-template verified until the official MDPI template asset is added and `verification.yaml` no longer reports `blocked`.
+

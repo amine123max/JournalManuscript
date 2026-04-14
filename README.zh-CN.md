@@ -76,8 +76,8 @@ Journal-manuscript/
     └── scripts/
         ├── README.md
         ├── export_selective_skill_bundle.py
-        ├── render_profile_preview_assets.py
-        └── render_official_template_preview_assets.py
+        ├── scaffold_family_manuscript.py
+        └── ...
 ```
 
 ## 使用者论文工作区约定
@@ -125,12 +125,10 @@ Journal-manuscript/
 
 如果你要看完整库，直接进入 `journal-manuscript/references/journals/`。现在每个 family 目录和 journal 目录都带有 `profile.md` 与 `official_preview.*`。带核验记录的目录额外包含 `verification.yaml`；真正的核验级别由该文件决定，可能是官方 family 模板、官方模板包，或者 blocked 占位状态。只要涉及跨期刊复用 family 级模板基线，就先看 `family-template-sharing-tiers.*`。
 
-## 维护脚本
+## 主要脚本
 
 - `journal-manuscript/scripts/export_selective_skill_bundle.py`：导出一个可分发的最小精简包，包含选定 family 或 journal 库及其所需模板资产。
-- `journal-manuscript/scripts/render_profile_preview_assets.py`：为未 `verified` 的目录生成标准化 `official_preview.*` 资产。
-- `journal-manuscript/scripts/render_official_template_preview_assets.py`：刷新已核验目录的 `official_preview.*` 与核验记录。
-- `journal-manuscript/scripts/README.md`：说明脚本命名规则、输出约定和典型命令。
+- `journal-manuscript/scripts/scaffold_family_manuscript.py`：基于支持的 family 模板，直接创建新的 `paper/` 写作工作区。
 
 ## 安装方式
 

@@ -15,7 +15,6 @@ Use this profile when the target manuscript is intended for IEEE Journal of Sele
 ## Official Guide Display
 
 - Official guide page: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
-- Downloaded guide file: `assets/official-templates/guides/ieee-jstars/official-guide-source.html`
 - Template basis: official IEEE family class (`IEEEtran`) recorded in `verification.yaml`
 - Guide alignment: use this local guide file together with the live author page before calling the layout submission-ready
 
@@ -42,3 +41,4 @@ Use this profile when the target manuscript is intended for IEEE Journal of Sele
 
 - IEEE family formatting has been verified at the publisher level
 - Special-topic calls, submission tracks, and any current artwork rules should still be checked from the live JSTARS author page
+

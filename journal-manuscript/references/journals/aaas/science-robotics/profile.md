@@ -29,3 +29,4 @@ Use this profile when the target manuscript is intended for Science Robotics.
 ## Safe Rule
 
 Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+

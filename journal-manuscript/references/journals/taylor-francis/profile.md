@@ -26,3 +26,4 @@ Use this profile when the target manuscript follows the Taylor and Francis Famil
 ## Safe Rule
 
 Treat this file as a family baseline and verify the concrete journal template before making high-risk layout changes.
+

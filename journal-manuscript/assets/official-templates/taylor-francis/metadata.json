@@ -2,5 +2,7 @@
   "family": "taylor-francis",
   "status": "guide_only",
   "official_source": "https://authorservices.taylorandfrancis.com/publishing-your-research/using-latex/",
-  "note": "Taylor and Francis guidance exists, but a stable family package download was not confirmed automatically in this environment."
+  "package_availability": "word_template_detected_no_latex_zip_confirmed",
+  "external_template_evidence": "https://www.overleaf.com/latex/templates/taylor-and-francis-latex-template-for-authors-interact-layout-plus-p-reference-style/jcttgbjrwpvq",
+  "note": "Taylor & Francis template guidance was prioritized during the journal-template scan. The official formatting page exposed Word template downloads, but this repository did not confirm a stable public official LaTeX zip for International Journal of Control. As external corroboration, Overleaf hosts Taylor & Francis interact-class templates authored by Taylor & Francis."
 }

@@ -11,12 +11,11 @@ Use this profile when the target manuscript follows the IEEE Family template fam
 
 - Official guide page: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
 - Official template download: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
-- Downloaded guide file: `assets/official-templates/guides/ieee/official-guide-source.html`
 - Local cached template package: `assets/official-templates/ieee/template-package/`
 - Template basis: imported official IEEEtran package recorded in `verification.yaml`
 - Local template package root: `assets/official-templates/ieee/template-package/`
 - Primary sample manuscript: `assets/official-templates/ieee/template-package/bare_jrnl.tex`
-- Guide alignment: use this local guide file together with the live author page before calling the layout submission-ready
+- Guide alignment: use the local official template package together with the live author page before calling the layout submission-ready
 
 
 ## Refined Format Baseline
@@ -42,3 +41,4 @@ Use this profile when the target manuscript follows the IEEE Family template fam
 ## Safe Rule
 
 Treat this file as a verified family baseline. For any specific IEEE journal, keep the IEEEtran structure and then tighten only the journal-specific differences such as page limits, article type, biography handling, supplementary-material rules, or section-name adjustments.
+

@@ -11,8 +11,9 @@ Use this profile when the target manuscript is intended for Applied Optics.
 ## Official Guide Display
 
 - Official guide page: https://opg.optica.org/submit/templates/default.cfm
-- Downloaded guide file: `assets/official-templates/guides/applied-optics/official-guide-source.html`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Official template download: https://opg.optica.org/resources/author/templates/latex-universal-template.zip
+- Local official template cache: `assets/official-templates/optica-publishing/journal-downloads/applied-optics/template-package/`
+- Guide alignment: use the downloaded official Optica template package together with the live Optica author page before calling the layout submission-ready
 
 ## Journal Focus
 
@@ -28,4 +29,5 @@ Use this profile when the target manuscript is intended for Applied Optics.
 
 ## Safe Rule
 
-Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+Treat this file as a journal-level template-backed profile. The official Optica template is now cached locally, but title-specific rules still need confirmation against the live Optica author guidance.
+

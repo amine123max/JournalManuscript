@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Applied Physics Lett
 ## Official Template Display
 
 - Official guide page: https://publishing.aip.org/resources/researchers/author-instructions/
-- Downloaded guide file: `assets/official-templates/guides/applied-physics-letters/official-guide-source.html`
 - Template basis: official AIP family class (`revtex4-2`) recorded in `verification.yaml`
 - Selected display baseline: `revtex4-2.cls` with `apl` journal option
 - Guide alignment: Verify APL letter-format constraints, rapid-communication expectations, and figure-density limits before calling the layout submission-ready.
@@ -31,3 +30,4 @@ Use this profile when the target manuscript is intended for Applied Physics Lett
 ## Safe Rule
 
 Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+

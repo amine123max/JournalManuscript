@@ -1,7 +1,15 @@
 {
   "family": "sage",
-  "status": "guide_only",
+  "status": "guide_only_with_journal_downloads",
   "official_source": "https://journals.sagepub.com/author-instructions",
-  "package_availability": "title_specific_or_gateway_managed",
-  "note": "SAGE author guidance is organized through title-level instruction pages and gateways; this repository has not yet confirmed one reusable family-wide LaTeX package root."
+  "package_availability": "journal_specific_zip_discovered",
+  "journal_download_root": "assets/official-templates/sage/journal-downloads",
+  "confirmed_journal_template_sources": [
+    "transactions-of-the-institute-of-measurement-and-control"
+  ],
+  "downloaded_journal_templates": [
+    "transactions-of-the-institute-of-measurement-and-control"
+  ],
+  "package_url": "https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip",
+  "note": "SAGE author guidance is still organized through title-level instruction pages and gateways, but this repository has now confirmed and can cache the official Sage LaTeX template zip for Transactions of the Institute of Measurement and Control."
 }

@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Scientific Reports.
 ## Official Guide Display
 
 - Official guide page: https://www.nature.com/nature-portfolio/for-authors/formatting-guide
-- Downloaded guide file: `assets/official-templates/guides/scientific-reports/official-guide-source.html`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 ## Journal Focus
@@ -29,3 +28,4 @@ Use this profile when the target manuscript is intended for Scientific Reports.
 ## Safe Rule
 
 Treat this file as a starter profile until the official template or author guide has been loaded and verified.
+

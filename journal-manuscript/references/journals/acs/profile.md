@@ -8,7 +8,6 @@ Use this profile when the target manuscript follows the ACS Family template fami
 
 - Official guide page: https://pubs.acs.org/page/4authors/submission/tex.html
 - Official template download: https://mirrors.ctan.org/macros/latex/contrib/achemso.zip
-- Downloaded guide file: `assets/official-templates/guides/acs/official-guide-source.html`
 - Local cached template package: `assets/official-templates/acs/template-package/`
 - Template basis: official ACS family class (`achemso`) recorded in `verification.yaml`
 - Selected display baseline: `achemso.cls` in manuscript article mode
@@ -31,3 +30,4 @@ Use this profile when the target manuscript follows the ACS Family template fami
 
 - Official template assets are available locally, and the displayed manuscript uses the class and submission mode shown above.
 - Use `verification.yaml` together with the live author guidance before calling the layout submission-ready.
+

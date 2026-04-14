@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Robotics and Autonom
 
 - Elsevier LaTeX instructions: `elsarticle.zip`
 - Official guide page: https://www.sciencedirect.com/journal/robotics-and-autonomous-systems/publish/guide-for-authors
-- Downloaded guide file: `assets/official-templates/guides/robotics-and-autonomous-systems/official-guide-source.html`
 - Imported local package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Selected display baseline: `elsarticle-template-num.tex`
 - Guide alignment: Verify frontmatter setup, supplementary material handling, and article type-specific requirements against the live guide for authors.
@@ -32,3 +31,4 @@ Use this profile when the target manuscript is intended for Robotics and Autonom
 
 - Official Elsevier template assets are imported locally, and the displayed manuscript uses the selected `elsarticle` sample shown above.
 - Use `verification.yaml` together with the live Guide for Authors before calling the layout submission-ready.
+

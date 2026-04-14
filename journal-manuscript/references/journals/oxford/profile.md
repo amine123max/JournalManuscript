@@ -7,8 +7,9 @@ Use this profile when the target manuscript follows the Oxford Family template f
 ## Official Guide Display
 
 - Official guide page: https://academic.oup.com/journals/pages/authors/preparing_your_manuscript
-- Downloaded guide file: `assets/official-templates/guides/oxford/official-guide-source.html`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Local title-level template cache: `assets/official-templates/oxford/journal-downloads/`
+- Confirmed downloaded journal templates: `bioinformatics`
+- Guide alignment: use the local official template package as the nearest official reference before calling the layout submission-ready
 
 - Common template anchor: Oxford University Press journal templates
 - Common traits: journal-specific title page rules, bibliography modes, and data or ethics declarations
@@ -25,4 +26,5 @@ Use this profile when the target manuscript follows the Oxford Family template f
 
 ## Safe Rule
 
-Treat this file as a family baseline and verify the concrete journal template before making high-risk layout changes.
+Treat this file as a family baseline and verify the concrete journal template before making high-risk layout changes. Prefer the downloaded title-level Oxford template cache when the target journal is `bioinformatics`.
+

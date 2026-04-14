@@ -8,11 +8,10 @@ Use this profile when the target manuscript follows the Frontiers Family templat
 
 - Official guide page: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
 - Official template download: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
-- Downloaded guide file: `assets/official-templates/guides/frontiers/official-guide-source.zip`
 - Local cached template package: `assets/official-templates/frontiers/`
 - Local template package root: `assets/official-templates/frontiers/`
 - Primary sample manuscript: `assets/official-templates/frontiers/frontiers.tex`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Guide alignment: use the local official template package as the nearest official reference before calling the layout submission-ready
 
 - Frontiers author guidelines and submission resources
 - Official journal page for the target Frontiers title
@@ -39,3 +38,4 @@ Use this profile when the target manuscript follows the Frontiers Family templat
 ## Safe Rule
 
 Treat this file as a reusable family baseline. The Frontiers package may be shared across sibling journals for drafting and preview, but specialty-section labeling, declarations, and any title-level reporting requirements still need journal-specific confirmation before final layout work.
+

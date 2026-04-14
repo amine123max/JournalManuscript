@@ -16,7 +16,6 @@ Use this profile when the target manuscript is intended for Frontiers in Neuroro
 
 - Official template package: `Frontiers_LaTeX_Templates.zip`
 - Official guide/package source: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
-- Downloaded guide file: `assets/official-templates/guides/frontiers-in-neurorobotics/official-guide-source.zip`
 - Imported local package: `assets/official-templates/frontiers/`
 - Selected display baseline: `FrontiersinHarvard.cls`
 - Guide alignment: the current verified preview uses the imported Frontiers class package and keeps specialty, correspondence, and open-science reporting sections visible
@@ -43,3 +42,4 @@ Use this profile when the target manuscript is intended for Frontiers in Neuroro
 
 - Official Frontiers template assets are imported locally, and the displayed manuscript uses the corresponding class package shown above.
 - Use `verification.yaml` together with the live journal guidance before calling the layout submission-ready.
+

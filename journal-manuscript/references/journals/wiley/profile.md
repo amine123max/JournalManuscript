@@ -8,7 +8,6 @@ Use this profile when the target manuscript follows the Wiley Family template fa
 
 - Official guide page: https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/LaTeX/index.html
 - Official template download: https://authors.wiley.com/asset/WileyDesign.zip
-- Downloaded guide file: `assets/official-templates/guides/wiley/official-guide-source.html`
 - Local cached template package: `assets/official-templates/wiley/template-package/`
 - Template basis: Wiley PDF design official template package recorded in `verification.yaml`
 - Selected display baseline: `USG.cls` with `MPS` style option
@@ -31,3 +30,4 @@ Use this profile when the target manuscript follows the Wiley Family template fa
 
 - Official Wiley template assets are imported locally, and the displayed manuscript uses the template package and style option recorded in `verification.yaml`.
 - Use `verification.yaml` together with the live Wiley guidance before calling the layout submission-ready.
+

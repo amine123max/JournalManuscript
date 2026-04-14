@@ -11,7 +11,6 @@ Use this profile when the target manuscript is intended for Ocean Modelling.
 
 - Elsevier LaTeX instructions: `elsarticle.zip`
 - Official guide page: https://www.sciencedirect.com/journal/ocean-modelling/publish/guide-for-authors
-- Downloaded guide file: `assets/official-templates/guides/ocean-modelling/official-guide-source.html`
 - Imported local package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Selected display baseline: `elsarticle-template-num.tex`
 - Guide alignment: Verify equation presentation, data availability notes, and bibliography mode against the live guide for authors.
@@ -32,3 +31,4 @@ Use this profile when the target manuscript is intended for Ocean Modelling.
 
 - Official Elsevier template assets are imported locally, and the displayed manuscript uses the selected `elsarticle` sample shown above.
 - Use `verification.yaml` together with the live Guide for Authors before calling the layout submission-ready.
+

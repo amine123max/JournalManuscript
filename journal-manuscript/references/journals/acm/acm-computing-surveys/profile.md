@@ -12,7 +12,6 @@ Use this profile when the target manuscript is intended for ACM Computing Survey
 
 - Official ACM authoring guide: https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex
 - Official guide page: https://www.acm.org/publications/authors/submissions-top
-- Downloaded guide file: `assets/official-templates/guides/acm-computing-surveys/official-guide-source.html`
 - Template basis: official ACM family class (`acmart`) recorded in `verification.yaml`
 - Selected display baseline: `acmart.cls` in manuscript mode (`CSUR`)
 - Guide alignment: Verify survey-paper expectations, section depth, and any ACM Computing Surveys-specific editorial guidance before calling the layout submission-ready.
@@ -32,3 +31,4 @@ Use this profile when the target manuscript is intended for ACM Computing Survey
 ## Safe Rule
 
 Use `verification.yaml` together with the live ACM author guidance before calling the layout submission-ready. The displayed manuscript now follows the official `acmart` review-oriented mode shown above.
+

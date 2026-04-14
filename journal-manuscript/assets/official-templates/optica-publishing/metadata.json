@@ -1,6 +1,13 @@
 {
   "family": "optica-publishing",
-  "status": "guide_only",
+  "status": "guide_only_with_journal_downloads",
   "official_source": "https://opg.optica.org/submit/templates/default.cfm",
-  "note": "Optica exposes title-level template guidance, but no single family package was confirmed in this environment."
+  "package_availability": "journal_specific_zip_discovered",
+  "journal_download_root": "assets/official-templates/optica-publishing/journal-downloads",
+  "downloaded_journal_templates": [
+    "applied-optics",
+    "optica",
+    "optics-express"
+  ],
+  "note": "Optica does not currently expose one reusable family-wide LaTeX package root in this repository, but the journal fetcher successfully discovered and downloaded title-level zip packages for Applied Optics, Optica, and Optics Express from the official template portal."
 }

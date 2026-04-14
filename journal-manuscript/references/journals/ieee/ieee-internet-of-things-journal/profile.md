@@ -15,7 +15,6 @@ Use this profile when the target manuscript is intended for IEEE Internet of Thi
 ## Official Guide Display
 
 - Official guide page: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
-- Downloaded guide file: `assets/official-templates/guides/ieee-internet-of-things-journal/official-guide-source.html`
 - Template basis: official IEEE family class (`IEEEtran`) recorded in `verification.yaml`
 - Guide alignment: use this local guide file together with the live author page before calling the layout submission-ready
 
@@ -42,3 +41,4 @@ Use this profile when the target manuscript is intended for IEEE Internet of Thi
 
 - IEEE family formatting has been verified at the publisher level
 - Live author-page checks are still needed for special issue tracks, datasets, and any current policy statements
+

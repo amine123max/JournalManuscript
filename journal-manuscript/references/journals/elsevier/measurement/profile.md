@@ -16,7 +16,6 @@ Use this profile when the target manuscript is intended for Measurement.
 
 - Elsevier LaTeX instructions: `elsarticle.zip`
 - Official guide page: https://www.sciencedirect.com/journal/measurement/publish/guide-for-authors
-- Downloaded guide file: `assets/official-templates/guides/measurement/official-guide-source.html`
 - Imported local package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Selected display baseline: `elsarticle-template-num.tex`
 - Guide alignment: The Measurement guide points authors back to the Guide for Authors when no journal-specific template is available and illustrates numbered square-bracket citations.
@@ -43,3 +42,4 @@ Use this profile when the target manuscript is intended for Measurement.
 
 - Official Elsevier template assets are imported locally, and the displayed manuscript uses the selected `elsarticle` sample shown above.
 - Use `verification.yaml` together with the live Guide for Authors before calling the layout submission-ready.
+

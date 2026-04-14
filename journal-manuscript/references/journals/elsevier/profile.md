@@ -8,10 +8,9 @@ Use this profile when the target manuscript follows the Elsevier Family template
 
 - Official guide page: Custom journal placeholder
 - Official template download: https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip
-- Downloaded guide file: `assets/official-templates/guides/elsevier/official-guide-source.txt`
 - Local cached template package: `assets/official-templates/elsevier/elsarticle/elsarticle/`
 - Guide note: no official guide exists for the custom-journal placeholder
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Guide alignment: use the local official template package as the nearest official reference before calling the layout submission-ready
 
 - Elsevier LaTeX author instructions and `elsarticle` guidance
 - Official Guide for Authors page for the specific journal
@@ -40,3 +39,4 @@ Use this profile when the target manuscript follows the Elsevier Family template
 ## Safe Rule
 
 Treat this file as a verified family baseline. For each concrete Elsevier journal, check which imported template sample best matches the guide for authors, then confirm whether citations are numeric or author-year and whether highlights, a graphical abstract, or declaration sections are required rather than optional.
+

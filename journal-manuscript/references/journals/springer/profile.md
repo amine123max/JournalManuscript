@@ -7,9 +7,8 @@ Use this profile when the target manuscript follows the Springer Family template
 
 - Official guide page: https://www.springernature.com/gp/authors/campaigns/latex-author-support
 - Official template download: https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12
-- Downloaded guide file: `assets/official-templates/guides/springer/official-guide-source.html`
 - Local cached template package: `assets/official-templates/springer/template-package/sn-article-template/`
-- Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
+- Guide alignment: use the local official template package as the nearest official reference before calling the layout submission-ready
 
 - Springer Nature LaTeX author support and journal template resources
 - Official journal submission guidelines page for the target title
@@ -37,3 +36,4 @@ Use this profile when the target manuscript follows the Springer Family template
 
 - Official Springer Nature template assets are imported locally, and the displayed manuscript uses the `sn-jnl` package shown in `verification.yaml`.
 - Use `verification.yaml` together with the live Springer journal guidance before calling the layout submission-ready.
+

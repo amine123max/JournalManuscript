@@ -16,7 +16,6 @@ Use this profile when the target manuscript is intended for Soft Computing.
 ## Official Guide Display
 
 - Official guide page: https://www.springernature.com/gp/authors/campaigns/latex-author-support
-- Downloaded guide file: `assets/official-templates/guides/soft-computing/official-guide-source.html`
 - Guide alignment: use this local guide file as the nearest official reference before calling the layout submission-ready
 
 ## Refined Format Notes
@@ -41,3 +40,4 @@ Use this profile when the target manuscript is intended for Soft Computing.
 
 - Springer family authoring has been verified at the publisher level
 - Final submission still needs the current Soft Computing journal package for precise bibliography and metadata rules
+
