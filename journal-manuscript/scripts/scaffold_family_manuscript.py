@@ -51,6 +51,7 @@ class FamilyScaffoldConfig:
     source_root: Path
     sample_tex: Path
     official_source: str
+    template_basis: str | None = None
     package_url: str | None = None
     bibliography_style: str | None = None
     sample_bib: Path | None = None
@@ -134,6 +135,65 @@ FAMILY_CONFIGS: dict[str, FamilyScaffoldConfig] = {
         package_url="https://mirrors.ctan.org/macros/latex/contrib/revtex.zip",
         sample_bib=Path("sample/aip/aipsamp.bib"),
     ),
+    "oxford": FamilyScaffoldConfig(
+        family="oxford",
+        display_name="Oxford Family",
+        source_root=Path(
+            "assets/official-templates/oxford/journal-downloads/bioinformatics/template-package"
+        ),
+        sample_tex=Path("oup-authoring-template.tex"),
+        official_source="https://academic.oup.com/journals/pages/authors/preparing_your_manuscript",
+        template_basis=(
+            "Representative family baseline derived from the cached Bioinformatics "
+            "OUP template package."
+        ),
+        package_url="https://mirrors.ctan.org/macros/latex/contrib/oup-authoring-template.zip",
+        sample_bib=Path("reference.bib"),
+    ),
+    "cambridge": FamilyScaffoldConfig(
+        family="cambridge",
+        display_name="Cambridge Family",
+        source_root=Path(
+            "assets/official-templates/cambridge/journal-downloads/journal-of-fluid-mechanics/template-package"
+        ),
+        sample_tex=Path("FLMguide.tex"),
+        official_source="https://www.cambridge.org/core/services/authors/journals/journal-layout-and-templates",
+        template_basis=(
+            "Representative family baseline derived from the cached Journal of Fluid "
+            "Mechanics Cambridge template package."
+        ),
+        package_url="https://www.cambridge.org/core/services/aop-file-manager/file/6336d49bb048e80011023dc6/JFM-FLM-AUTemplate.zip",
+        sample_bib=Path("jfm.bib"),
+    ),
+    "sage": FamilyScaffoldConfig(
+        family="sage",
+        display_name="SAGE Family",
+        source_root=Path(
+            "assets/official-templates/sage/journal-downloads/transactions-of-the-institute-of-measurement-and-control/template-package"
+        ),
+        sample_tex=Path("Sage_LaTeX_Guidelines.tex"),
+        official_source="https://journals.sagepub.com/author-instructions",
+        template_basis=(
+            "Representative family baseline derived from the cached Transactions of "
+            "the Institute of Measurement and Control SAGE template package."
+        ),
+        package_url="https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip",
+    ),
+    "optica-publishing": FamilyScaffoldConfig(
+        family="optica-publishing",
+        display_name="Optica Publishing Group Family",
+        source_root=Path(
+            "assets/official-templates/optica-publishing/journal-downloads/applied-optics/template-package"
+        ),
+        sample_tex=Path("Optica-template.tex"),
+        official_source="https://opg.optica.org/submit/templates/default.cfm",
+        template_basis=(
+            "Representative family baseline derived from the cached Applied Optics "
+            "Optica template package."
+        ),
+        package_url="https://opg.optica.org/resources/author/templates/latex-universal-template.zip",
+        sample_bib=Path("sample.bib"),
+    ),
 }
 
 
@@ -163,8 +223,16 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def available_family_configs() -> dict[str, FamilyScaffoldConfig]:
+    return {
+        slug: config
+        for slug, config in FAMILY_CONFIGS.items()
+        if (ROOT / config.source_root).exists()
+    }
+
+
 def supported_families_text() -> str:
-    return ", ".join(sorted(FAMILY_CONFIGS))
+    return ", ".join(sorted(available_family_configs()))
 
 
 def read_text_with_fallback(path: Path) -> str:
@@ -350,6 +418,11 @@ def write_readme_paper(
         f"- Source template root: `{config.source_root.as_posix()}`",
         f"- Sample entry used: `{config.sample_tex.as_posix()}`",
         f"- Official guide page: {config.official_source}",
+        (
+            f"- Template basis: {config.template_basis}"
+            if config.template_basis
+            else "- Template basis: reusable family-wide official package root."
+        ),
         "",
         "## Expected Files",
         "",
@@ -391,6 +464,8 @@ def write_family_manifest(config: FamilyScaffoldConfig, paper_dir: Path) -> None
         "source_root": config.source_root.as_posix(),
         "sample_tex": config.sample_tex.as_posix(),
         "official_source": config.official_source,
+        "template_basis": config.template_basis
+        or "reusable family-wide official package root",
         "package_url": config.package_url or config.official_source,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     }
@@ -485,8 +560,14 @@ def scaffold_family(config: FamilyScaffoldConfig, paper_dir: Path) -> None:
 def main() -> None:
     args = parse_args()
     family = args.family.strip().lower()
-    config = FAMILY_CONFIGS.get(family)
+    available_configs = available_family_configs()
+    config = available_configs.get(family)
     if config is None:
+        if family in FAMILY_CONFIGS:
+            raise SystemExit(
+                f"Family scaffold assets for `{family}` are not installed in this package. "
+                f"Available families: {supported_families_text()}"
+            )
         raise SystemExit(
             f"Unsupported family scaffold: {family}. Supported families: {supported_families_text()}"
         )

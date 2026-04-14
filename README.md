@@ -155,37 +155,23 @@ Minimal family packages are the recommended download format for end users. Each 
 
 This is the supported way to let users download the corresponding family library, the matching family template assets, and the usable Codex skill in one package.
 
+The release assets below are the currently validated minimal families. Each ZIP has been aligned so the installed package can also create a `paper/` scaffold directly from the bundled family template baseline.
+
 Click a family link below to download the corresponding minimal installation ZIP directly:
 
 | Family | Download |
 | --- | --- |
-| `aaas` | [AAAS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-aaas.zip) |
-| `acm` | [ACM Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-acm.zip) |
 | `acs` | [ACS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-acs.zip) |
 | `aip` | [AIP Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-aip.zip) |
-| `bmc` | [BMC Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-bmc.zip) |
 | `cambridge` | [Cambridge Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-cambridge.zip) |
-| `cell-press` | [Cell Press Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-cell-press.zip) |
-| `copernicus` | [Copernicus Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-copernicus.zip) |
-| `custom-journal` | [Custom Journal Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-custom-journal.zip) |
-| `de-gruyter` | [De Gruyter Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-de-gruyter.zip) |
 | `elsevier` | [Elsevier Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-elsevier.zip) |
-| `emerald` | [Emerald Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-emerald.zip) |
 | `frontiers` | [Frontiers Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-frontiers.zip) |
-| `hindawi` | [Hindawi Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-hindawi.zip) |
 | `ieee` | [IEEE Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-ieee.zip) |
-| `iop` | [IOP Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-iop.zip) |
-| `mdpi` | [MDPI Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-mdpi.zip) |
-| `nas` | [NAS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-nas.zip) |
-| `nature-portfolio` | [Nature Portfolio Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-nature-portfolio.zip) |
 | `optica-publishing` | [Optica Publishing Group Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-optica-publishing.zip) |
 | `oxford` | [Oxford Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-oxford.zip) |
 | `plos` | [PLOS Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-plos.zip) |
-| `royal-society` | [Royal Society Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-royal-society.zip) |
 | `sage` | [SAGE Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-sage.zip) |
-| `siam` | [SIAM Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-siam.zip) |
 | `springer` | [Springer Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-springer.zip) |
-| `taylor-francis` | [Taylor and Francis Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-taylor-francis.zip) |
 | `wiley` | [Wiley Family](https://github.com/amine123max/JournalManuscript/releases/latest/download/journal-manuscript-family-wiley.zip) |
 
 If you need to regenerate or refresh a package locally, use:
@@ -207,12 +193,14 @@ End-user installation is straightforward: click the ZIP link, extract it if need
 ## Family Scaffold
 
 The repository now also supports creating a fresh `paper/` starter workspace directly from a supported family template baseline.
+For families without one reusable family-wide package root, the scaffold uses the nearest locally cached official journal template as the family baseline.
 
 Typical examples:
 
 ```powershell
 python journal-manuscript/scripts/scaffold_family_manuscript.py --family ieee --output-dir C:\work\ieee-paper
 python journal-manuscript/scripts/scaffold_family_manuscript.py --family frontiers --output-dir C:\work\frontiers-paper
+python journal-manuscript/scripts/scaffold_family_manuscript.py --family cambridge --output-dir C:\work\cambridge-paper
 ```
 
 What the scaffold creates:
@@ -235,6 +223,10 @@ Supported scaffold families in the current script:
 - `wiley`
 - `acs`
 - `aip`
+- `oxford`
+- `cambridge`
+- `sage`
+- `optica-publishing`
 
 Recommended usage flow:
 

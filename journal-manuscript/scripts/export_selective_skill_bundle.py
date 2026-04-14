@@ -12,11 +12,14 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
+from scaffold_family_manuscript import FAMILY_CONFIGS
+
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = ROOT.parent
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "dist"
 JOURNALS_DIR = ROOT / "references" / "journals"
+SCAFFOLD_READY_FAMILIES = tuple(sorted(FAMILY_CONFIGS))
 REPO_FILES = [
     Path("LICENSE"),
 ]
@@ -36,6 +39,7 @@ CORE_FILES = [
     Path("references/journals/family-template-sharing-tiers.md"),
     Path("references/journals/family-template-sharing-tiers.yaml"),
     Path("scripts/README.md"),
+    Path("scripts/export_selective_skill_bundle.py"),
     Path("scripts/scaffold_family_manuscript.py"),
 ]
 
@@ -249,21 +253,34 @@ def prepare_bundle_root(bundle_root: Path, *, force: bool) -> None:
     bundle_root.mkdir(parents=True, exist_ok=True)
 
 
+def windows_safe_path(path: Path) -> str:
+    resolved = str(path.resolve())
+    if resolved.startswith("\\\\?\\") or resolved.startswith("\\\\"):
+        return resolved
+    if Path(resolved).is_absolute():
+        return "\\\\?\\" + resolved
+    return resolved
+
+
 def copy_relative_path(relative_path: Path, destination_root: Path) -> None:
     source = ROOT / relative_path
     destination = destination_root / relative_path
     if source.is_dir():
-        shutil.copytree(source, destination, dirs_exist_ok=True)
+        shutil.copytree(
+            windows_safe_path(source),
+            windows_safe_path(destination),
+            dirs_exist_ok=True,
+        )
         return
     destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, destination)
+    shutil.copy2(windows_safe_path(source), windows_safe_path(destination))
 
 
 def copy_repo_relative_path(relative_path: Path, destination_root: Path) -> None:
     source = REPO_ROOT / relative_path
     destination = destination_root / relative_path
     destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, destination)
+    shutil.copy2(windows_safe_path(source), windows_safe_path(destination))
 
 
 def write_bundle_manifest(
@@ -274,6 +291,9 @@ def write_bundle_manifest(
     asset_paths: list[Path],
     missing_assets: list[str],
 ) -> None:
+    scaffold_ready_family_slugs = [
+        record.slug for record in families if record.slug in SCAFFOLD_READY_FAMILIES
+    ]
     payload = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "bundle_type": "journal-manuscript-slim",
@@ -293,6 +313,7 @@ def write_bundle_manifest(
             }
             for record in families
         ],
+        "included_scaffold_ready_families": scaffold_ready_family_slugs,
         "included_asset_paths": [path.as_posix() for path in asset_paths],
         "missing_asset_references": missing_assets,
     }
@@ -316,6 +337,11 @@ def write_bundle_readmes(
         f"- `{relative_profile_dir(record.profile_dir).relative_to(Path('references/journals')).as_posix()}/`: {record.display_name} (`slug: {record.slug}`)"
         for record in families
     ] or ["- none"]
+    scaffold_lines = [
+        f"- `{record.slug}`: one-click `paper/` scaffold available via `python journal-manuscript/scripts/scaffold_family_manuscript.py --family {record.slug} --output-dir <workspace>`"
+        for record in families
+        if record.slug in SCAFFOLD_READY_FAMILIES
+    ] or ["- none in this package"]
 
     english = [
         "# Journal Manuscript Minimal Package",
@@ -331,6 +357,10 @@ def write_bundle_readmes(
         "## Included Families",
         "",
         *family_lines,
+        "",
+        "## Family Scaffold Support",
+        "",
+        *scaffold_lines,
         "",
         "## Installation",
         "",
@@ -364,6 +394,10 @@ def write_bundle_readmes(
         "## 已包含的家族",
         "",
         *family_lines,
+        "",
+        "## Family 脚手架支持",
+        "",
+        *scaffold_lines,
         "",
         "## 安装方式",
         "",
@@ -461,6 +495,16 @@ def create_zip_archive(bundle_root: Path, *, force: bool) -> Path:
     return archive_path
 
 
+def required_scaffold_assets_for_families(family_slugs: list[str]) -> list[Path]:
+    required: list[Path] = []
+    for slug in family_slugs:
+        config = FAMILY_CONFIGS.get(slug)
+        if not config:
+            continue
+        required.append(config.source_root)
+    return unique_relative_paths(required)
+
+
 def main() -> None:
     args = parse_args()
     requested_journals = unique_preserve(args.journal)
@@ -514,6 +558,8 @@ def main() -> None:
         asset_paths.extend(family_assets)
         missing_assets.extend(family_missing)
 
+    asset_paths = unique_relative_paths(asset_paths)
+    asset_paths.extend(required_scaffold_assets_for_families(requested_families))
     asset_paths = unique_relative_paths(asset_paths)
     missing_assets = sorted(set(missing_assets))
 
