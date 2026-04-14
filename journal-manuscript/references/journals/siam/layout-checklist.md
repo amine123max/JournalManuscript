@@ -1,11 +1,11 @@
 # SIAM Family Layout Checklist
 
-Use this checklist together with `verification.yaml` before calling the family-level or journal-level layout submission-ready.
+Use this checklist together with `verification.yaml` before calling the journal-specific layout submission-ready.
 
 ## Verification Boundary
 
-- Official template package verified through local SIAM package assets.
-- Family-level preview exists, but target-title theorem policy and front matter still require confirmation.
+- Official template package verified through `official_preview.tex/.pdf/.png`.
+- Journal-specific layout compliance still requires the checklist below.
 
 ## Required Checks
 
@@ -14,6 +14,7 @@ Use this checklist together with `verification.yaml` before calling the family-l
 - [ ] `section-flow-and-theorem-rules` Section flow and theorem rules: Confirm theorem environments, section hierarchy, and appendix handling match the target SIAM journal expectations.
 - [ ] `figure-table-and-proof-style` Figure, table, and proof style: Confirm table treatment, figure captions, proof formatting, and equation presentation follow the target SIAM style.
 - [ ] `references-and-bibliography-style` References and bibliography style: Confirm the target SIAM journal still uses the family bibliography workflow represented by the local package.
+- [ ] `journal-specific-note` Journal-specific note: Use this family baseline only when the exact SIAM target journal has not yet been fixed; once the venue is known, tighten the manuscript against that title's live guidance.
 
 ## Supporting Files
 
@@ -22,3 +23,7 @@ Use this checklist together with `verification.yaml` before calling the family-l
 - `official_preview.tex`
 - `official_preview.pdf`
 - `official_preview.png`
+
+## Official Source
+
+- https://www.siam.org/publications/journals/authors/

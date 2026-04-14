@@ -1,72 +1,34 @@
 
-\documentclass[10pt,a4paper]{article}
-\usepackage[margin=0.65in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
-\usepackage{multicol}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage[table]{xcolor}
-\usepackage{graphicx}
-\usepackage{tikz}
-\usepackage{hyperref}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.35em}
-\pagestyle{empty}
-\definecolor{accent}{named}{black}
+\documentclass{iopjournal}
 \begin{document}
-\begin{center}
-{\LARGE\bfseries IOP Family}\par
-\vspace{0.25em}
-{\small Journal Manuscript Preview Library}\par
-\vspace{0.15em}
-{\footnotesize Family baseline preview for IOP Family}\par
-\vspace{0.2em}
-{\footnotesize Profile slug: iop \quad Family: iop \quad Scope: Family baseline}
-\end{center}
-\vspace{0.2em}
-\noindent{\color{blue!55!black}\bfseries Article Type:} Placeholder Research Article\par\vspace{0.4em}
-
-
-\noindent\textbf{Authors.} A. Placeholder, B. Example, and C. Template\par
-\noindent\textbf{Affiliations.} Department of Simulated Formatting, Placeholder Institute\par
-\noindent\textbf{Contact.} preview@example.org\par
-\vspace{0.4em}
-\noindent\textbf{Abstract.} This simulated first-page preview uses placeholder text, a placeholder figure, and a placeholder table to visualize how a manuscript may look under the selected journal profile. The content is intentionally generic so attention stays on spacing, title treatment, abstract presentation, caption location, and the overall page rhythm.\par\vspace{0.6em}
-
-
-\begin{multicols}{2}
-\small
-\textbf{1. Introduction.} This placeholder article body is intentionally short but dense enough to reveal the page rhythm of the selected journal profile. It emphasizes title treatment, abstract position, section spacing, figure placement, table styling, and bibliography preview while keeping the manuscript content secondary.
-
-\textbf{2. Methods.} The simulated manuscript uses generic technical prose, a compact table, and an inline figure block so that the resulting PNG can be reviewed visually as a format check rather than as a scientific contribution preview.
-
-
-\begin{center}\fcolorbox{black!60}{gray!10}{\begin{minipage}[c][2.25cm][c]{0.93\linewidth}\centering\Large Image Placeholder\\[0.4em]\normalsize Simulated figure area\end{minipage}}\end{center}\noindent\textbf{Figure 1.} Placeholder figure caption showing the expected caption style and relative spacing.\par\vspace{0.5em}
-
-\textbf{3. Results.} Placeholder narrative text continues here to show section headings, paragraph spacing, and how a figure or table sits relative to adjacent content in the current preview style.
-
-\noindent\textbf{Table 1.} Placeholder table caption showing metric labels and compact journal spacing.\par\begin{center}
-\begin{tabular}{lccc}
-\toprule
-Method & Score & Error & Time\\
-\midrule
-Placeholder A & 0.91 & 0.08 & 1.4\\
-Placeholder B & 0.88 & 0.11 & 1.7\\
-Placeholder C & 0.84 & 0.15 & 2.0\\
-\bottomrule
-\end{tabular}\end{center}\vspace{0.5em}
-
-\textbf{4. Discussion.} The content is arbitrary by design. The main goal is to provide a quick visual reference for manuscript structure, front matter, floats, and house-style signals inside the profile library.
-
-\end{multicols}
-
-\vspace{0.5em}
-\noindent \textbf{References.} [1] A. Smith and B. Lee, ``Journal template adaptation,'' \textit{Placeholder Journal}, 2024. [2] C. Garcia \textit{et al.}, ``Figure and table policy notes,'' 2025.\par
-\vspace{0.6em}
-\fcolorbox{black!45}{gray!6}{\begin{minipage}{0.98\linewidth}
-\footnotesize Simulated preview built from the local starter profile library.\\ Use the official template to finalize submission-ready formatting.
-\end{minipage}}
+\articletype{Research Article}
+\title{IOP Family: Official IOP Submission Preview}
+\author{A. Placeholder$^1$ and B. Example$^2$}
+\affil{$^1$Department of Verified Templates, Placeholder Institute, City, Country}
+\affil{$^2$Journal Systems Lab, Example University, City, Country}
+\email{verified@example.org}
+\keywords{template verification, IOP style, manuscript preview}
+\begin{abstract}
+This submission-style preview is rendered with the imported official IOP journal article package. The content remains placeholder text, but the page is intentionally structured as a realistic physics-oriented manuscript so front matter, section flow, figure-table rhythm, and end sections are easier to inspect.
+\end{abstract}
+\section{Introduction}
+The introduction is written as compact technical prose so the preview reads more like a practical IOP submission than a generic display page.
+\section{Related Work}
+The related-work section is explicit so the preview reveals how literature framing, methods, and experiments separate within the family baseline.
+\section{Methodology}
+The methodology section introduces representative notation and a figure placeholder so the imported IOP package can be inspected under more realistic technical content.
+\begin{equation}
+\mathcal{L} = \sum_{i=1}^{M} w_i \left\| y_i - \hat{y}_i \right\|_2^2.
+\end{equation}
+\section{Experiments}
+The experiments section provides enough structure to expose quantitative comparison rhythm and table treatment inside the IOP family baseline.
+\section{Conclusion and Discussion}
+This page verifies the imported official IOP package path while preserving the six-part manuscript skeleton requested for the library.
+\ack{Placeholder acknowledgment.}
+\funding{Placeholder funding statement.}
+\data{Placeholder data availability statement.}
+\section*{References}
+\begin{thebibliography}{9}
+\bibitem{ref1} A. Smith and B. Lee, {\it Template-aware IOP manuscript preparation}, Placeholder Journal 1 (2026) 1--10.
+\end{thebibliography}
 \end{document}

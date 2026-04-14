@@ -1,11 +1,11 @@
 # IOP Family Layout Checklist
 
-Use this checklist together with `verification.yaml` before calling the family-level or journal-level layout submission-ready.
+Use this checklist together with `verification.yaml` before calling the journal-specific layout submission-ready.
 
 ## Verification Boundary
 
-- Official template package verified through local IOP package assets.
-- The family baseline is reusable with caution because some IOP titles allow or prefer more generic source submission.
+- Official template package verified through `official_preview.tex/.pdf/.png`.
+- Journal-specific layout compliance still requires the checklist below.
 
 ## Required Checks
 
@@ -14,6 +14,7 @@ Use this checklist together with `verification.yaml` before calling the family-l
 - [ ] `section-flow-and-end-section-rules` Section flow and end section rules: Confirm section hierarchy, acknowledgments, funding, author roles, data statements, and supplementary data sections match the target title.
 - [ ] `figure-table-and-accessibility-rules` Figure, table, and accessibility rules: Confirm artwork handling, caption expectations, and accessibility recommendations follow the current IOP guidance.
 - [ ] `references-and-bibliography-style` References and bibliography style: Confirm the target IOP journal's bibliography workflow and reference formatting expectations.
+- [ ] `journal-specific-note` Journal-specific note: Use this family baseline only when the exact IOP target journal has not yet been fixed; once the venue is known, tighten the manuscript against that title's live guidance.
 
 ## Supporting Files
 
@@ -22,3 +23,7 @@ Use this checklist together with `verification.yaml` before calling the family-l
 - `official_preview.tex`
 - `official_preview.pdf`
 - `official_preview.png`
+
+## Official Source
+
+- https://publishingsupport.iopscience.iop.org/questions/latex-template/

@@ -26,6 +26,12 @@ SPRINGER_LATEX_SOURCE = "https://www.springernature.com/gp/authors/campaigns/lat
 SPRINGER_TEMPLATE_PACKAGE_URL = "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12"
 WILEY_LATEX_SOURCE = "https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html"
 WILEY_TEMPLATE_PACKAGE_URL = "https://authors.wiley.com/asset/WileyDesign.zip"
+COPERNICUS_LATEX_SOURCE = "https://publications.copernicus.org/for_authors/manuscript_preparation.html"
+COPERNICUS_TEMPLATE_PACKAGE_URL = "https://publications.copernicus.org/Copernicus_LaTeX_Package.zip"
+SIAM_LATEX_SOURCE = "https://www.siam.org/publications/journals/authors/"
+SIAM_TEMPLATE_PACKAGE_URL = "https://tug.ctan.org/macros/latex/contrib/siam/siamltex.zip"
+IOP_LATEX_SOURCE = "https://publishingsupport.iopscience.iop.org/questions/latex-template/"
+IOP_TEMPLATE_PACKAGE_URL = "https://publishingsupport.iopscience.iop.org/wp-content/uploads/2025/07/ioplatextemplate.zip"
 
 
 def resolve_journal_dir(root: Path, slug: str) -> Path:
@@ -242,6 +248,90 @@ COMMON_WILEY_CHECKS = [
         "id": "references-and-bibliography-style",
         "title": "References and bibliography style",
         "requirement": "Confirm the selected Wiley bibliography mode matches the target journal guidance.",
+    },
+]
+
+COMMON_COPERNICUS_CHECKS = [
+    {
+        "id": "class-file-and-journal-abbreviation",
+        "title": "Class file and journal abbreviation",
+        "requirement": "Confirm the manuscript uses the official Copernicus class and the correct journal abbreviation for the target title.",
+    },
+    {
+        "id": "frontmatter-and-geoscience-metadata",
+        "title": "Front matter and geoscience metadata",
+        "requirement": "Confirm title, authors, affiliations, abstract, running title, and discussion-paper metadata follow the target Copernicus journal guidance.",
+    },
+    {
+        "id": "section-flow-and-open-review-rules",
+        "title": "Section flow and open-review rules",
+        "requirement": "Confirm the manuscript structure, appendix handling, and any open-review or discussion-paper workflow requirements match the target journal.",
+    },
+    {
+        "id": "figure-table-and-declaration-rules",
+        "title": "Figure, table, and declaration rules",
+        "requirement": "Confirm artwork, table treatment, author contributions, competing interests, and acknowledgments follow the target journal guidance.",
+    },
+    {
+        "id": "references-and-bibliography-style",
+        "title": "References and bibliography style",
+        "requirement": "Confirm whether the target journal expects BibTeX with the Copernicus style or manual bibliography handling.",
+    },
+]
+
+COMMON_SIAM_CHECKS = [
+    {
+        "id": "class-file-and-title-scope",
+        "title": "Class file and title scope",
+        "requirement": "Confirm the manuscript uses the SIAM package and that the target title still accepts the family baseline.",
+    },
+    {
+        "id": "frontmatter-and-math-metadata",
+        "title": "Front matter and math metadata",
+        "requirement": "Confirm title, authors, affiliations, abstract, keywords, AMS subject classifications, and running heads follow the target SIAM title guidance.",
+    },
+    {
+        "id": "section-flow-and-theorem-rules",
+        "title": "Section flow and theorem rules",
+        "requirement": "Confirm theorem environments, section hierarchy, and appendix handling match the target SIAM journal expectations.",
+    },
+    {
+        "id": "figure-table-and-proof-style",
+        "title": "Figure, table, and proof style",
+        "requirement": "Confirm table treatment, figure captions, proof formatting, and equation presentation follow the target SIAM style.",
+    },
+    {
+        "id": "references-and-bibliography-style",
+        "title": "References and bibliography style",
+        "requirement": "Confirm the target SIAM journal still uses the family bibliography workflow represented by the local package.",
+    },
+]
+
+COMMON_IOP_CHECKS = [
+    {
+        "id": "class-file-and-submission-path",
+        "title": "Class file and submission path",
+        "requirement": "Confirm the target IOP title accepts the family template path and whether the manuscript should be submitted in the template class or as a generic LaTeX source.",
+    },
+    {
+        "id": "frontmatter-and-article-type",
+        "title": "Front matter and article type",
+        "requirement": "Confirm article type, authors, affiliations, correspondence, abstract, and keywords follow the target IOP journal guidance.",
+    },
+    {
+        "id": "section-flow-and-end-section-rules",
+        "title": "Section flow and end section rules",
+        "requirement": "Confirm section hierarchy, acknowledgments, funding, author roles, data statements, and supplementary data sections match the target title.",
+    },
+    {
+        "id": "figure-table-and-accessibility-rules",
+        "title": "Figure, table, and accessibility rules",
+        "requirement": "Confirm artwork handling, caption expectations, and accessibility recommendations follow the current IOP guidance.",
+    },
+    {
+        "id": "references-and-bibliography-style",
+        "title": "References and bibliography style",
+        "requirement": "Confirm the target IOP journal's bibliography workflow and reference formatting expectations.",
     },
 ]
 
@@ -573,11 +663,143 @@ def wiley_target(
     }
 
 
+def copernicus_target(display_name: str, journal_specific_note: str, *, source: str = COPERNICUS_LATEX_SOURCE) -> dict[str, object]:
+    checks = [dict(item) for item in COMMON_COPERNICUS_CHECKS]
+    checks.append(
+        {
+            "id": "journal-specific-note",
+            "title": "Journal-specific note",
+            "requirement": journal_specific_note,
+        }
+    )
+    return {
+        "status": "verified",
+        "template_family": "Copernicus official LaTeX template package",
+        "verification_scope": "official-template-package",
+        "source": source,
+        "compile_mode": "copernicus",
+        "display_name": display_name,
+        "notes": [
+            "Verified against the official Copernicus LaTeX package stored in the local assets folder.",
+            "The family-level preview is rendered from the local Copernicus package rather than a generic starter profile.",
+        ],
+        "supporting_files": {
+            "journal_profile": "./profile.md",
+            "layout_checklist": "./layout-checklist.md",
+        },
+        "journal_specific_validation": {
+            "status": "checklist-required",
+            "checklist_path": "./layout-checklist.md",
+            "boundary": "Official Copernicus template package is available locally, but target-journal article metadata, discussion-paper workflow, and bibliography rules still require confirmation against the live journal guidance.",
+        },
+        "verification_checks": checks,
+        "official_template_import": {
+            "source_page": source,
+            "package_url": COPERNICUS_TEMPLATE_PACKAGE_URL,
+            "local_package_root": "assets/official-templates/copernicus/template-package",
+            "selected_template": "template.tex",
+            "class_file": "copernicus.cls",
+        },
+    }
+
+
+def siam_target(display_name: str, journal_specific_note: str, *, source: str = SIAM_LATEX_SOURCE) -> dict[str, object]:
+    checks = [dict(item) for item in COMMON_SIAM_CHECKS]
+    checks.append(
+        {
+            "id": "journal-specific-note",
+            "title": "Journal-specific note",
+            "requirement": journal_specific_note,
+        }
+    )
+    return {
+        "status": "verified",
+        "template_family": "SIAM official LaTeX template package",
+        "verification_scope": "official-template-package",
+        "source": source,
+        "compile_mode": "siam",
+        "display_name": display_name,
+        "notes": [
+            "Verified against the official SIAM package stored in the local assets folder.",
+            "The family-level preview is rendered from the local SIAM package rather than a generic starter profile.",
+        ],
+        "supporting_files": {
+            "journal_profile": "./profile.md",
+            "layout_checklist": "./layout-checklist.md",
+        },
+        "journal_specific_validation": {
+            "status": "checklist-required",
+            "checklist_path": "./layout-checklist.md",
+            "boundary": "Official SIAM package is available locally, but title-specific theorem policy, front matter, and bibliography expectations still require confirmation against the live author instructions.",
+        },
+        "verification_checks": checks,
+        "official_template_import": {
+            "source_page": source,
+            "package_url": SIAM_TEMPLATE_PACKAGE_URL,
+            "local_package_root": "assets/official-templates/siam/template-package",
+            "selected_template": "lexample.tex",
+            "class_file": "siamltex.cls",
+        },
+    }
+
+
+def iop_target(display_name: str, journal_specific_note: str, *, source: str = IOP_LATEX_SOURCE) -> dict[str, object]:
+    checks = [dict(item) for item in COMMON_IOP_CHECKS]
+    checks.append(
+        {
+            "id": "journal-specific-note",
+            "title": "Journal-specific note",
+            "requirement": journal_specific_note,
+        }
+    )
+    return {
+        "status": "verified",
+        "template_family": "IOP official journal article template package",
+        "verification_scope": "official-template-package",
+        "source": source,
+        "compile_mode": "iop",
+        "display_name": display_name,
+        "notes": [
+            "Verified against the official IOP journal article template package stored in the local assets folder.",
+            "The family-level preview is rendered from the local IOP package rather than a generic starter profile.",
+        ],
+        "supporting_files": {
+            "journal_profile": "./profile.md",
+            "layout_checklist": "./layout-checklist.md",
+        },
+        "journal_specific_validation": {
+            "status": "checklist-required",
+            "checklist_path": "./layout-checklist.md",
+            "boundary": "Official IOP package is available locally, but some IOP titles do not require submission in that exact class format, so target-journal guidance still overrides the family baseline.",
+        },
+        "verification_checks": checks,
+        "official_template_import": {
+            "source_page": source,
+            "package_url": IOP_TEMPLATE_PACKAGE_URL,
+            "local_package_root": "assets/official-templates/iop/template-package",
+            "selected_template": "iopjournal-template.tex",
+            "class_file": "iopjournal.cls",
+        },
+    }
+
+
 TARGETS = {
     "wiley": wiley_target(
         "Wiley Family",
         "MPS",
         "Use this family baseline only when the exact Wiley target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live Wiley guidance.",
+    ),
+    "copernicus": copernicus_target(
+        "Copernicus Family",
+        "Use this family baseline only when the exact Copernicus target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live guidance.",
+    ),
+    "siam": siam_target(
+        "SIAM Family",
+        "Use this family baseline only when the exact SIAM target journal has not yet been fixed; once the venue is known, tighten the manuscript against that title's live guidance.",
+    ),
+    "iop": iop_target(
+        "IOP Family",
+        "Use this family baseline only when the exact IOP target journal has not yet been fixed; once the venue is known, tighten the manuscript against that title's live guidance.",
     ),
     "journal-of-field-robotics": wiley_target(
         "Journal of Field Robotics",
@@ -1691,6 +1913,120 @@ Placeholder data availability statement.
 \begin{{enumerate}}
 \item Placeholder A, Example B (2026) Verified template note for PLOS manuscript checking.
 \end{{enumerate}}
+    \end{{document}}
+"""
+
+
+def build_copernicus_tex(title: str) -> str:
+    return rf"""
+\documentclass[os,manuscript]{{copernicus}}
+\usepackage{{booktabs}}
+\usepackage{{amsmath}}
+\begin{{document}}
+\title{{{title}: Official Copernicus Submission Preview}}
+\Author[1][verified@example.org]{{A.}}{{Placeholder}}
+\Author[1]{{B.}}{{Example}}
+\Author[2]{{C.}}{{Template}}
+\affil[1]{{Department of Verified Templates, Placeholder Institute, City, Country}}
+\affil[2]{{Journal Systems Lab, Example University, City, Country}}
+\runningtitle{{{title}: Official Copernicus Submission Preview}}
+\runningauthor{{Placeholder et al.}}
+\begin{{abstract}}
+This submission-style preview is rendered with the imported official Copernicus package. The page is intentionally structured as a realistic geoscience manuscript so front matter, section rhythm, figure-table balance, and declaration blocks can be checked against the family baseline.
+\end{{abstract}}
+\section{{Introduction}}
+The introduction is written as compact technical prose so the preview reads more like a practical Copernicus submission than a generic display page.
+\section{{Related Work}}
+The related-work section is explicit so the preview reveals how literature framing, methods, and experiments separate within the family baseline.
+\section{{Methodology}}
+The methodology section introduces representative mathematics and a figure placeholder so the local Copernicus package can be inspected under more realistic technical content.
+\begin{{equation}}
+\mathcal{{L}} = \sum_{{i=1}}^{{M}} w_i \left\| y_i - \hat{{y}}_i \right\|_2^2.
+\end{{equation}}
+\section{{Experiments}}
+The experiments section provides enough structure to expose table treatment and section rhythm inside the Copernicus family baseline.
+\section{{Conclusion and Discussion}}
+This page verifies the imported official Copernicus package path while preserving the six-part manuscript skeleton requested for the library.
+\authorcontribution{{All contributions are placeholders for template verification.}}
+\competinginterests{{The authors declare that they have no conflict of interest.}}
+\begin{{thebibliography}}{{9}}
+\bibitem[Placeholder and Example(2026)]{{ref1}} Placeholder, A. and Example, B.: Template-aware Copernicus manuscript preparation, Placeholder Journal, 1, 1--2, 2026.
+\end{{thebibliography}}
+\end{{document}}
+"""
+
+
+def build_siam_tex(title: str) -> str:
+    return rf"""
+\documentclass[final]{{siamltex}}
+\title{{{title}: Official SIAM Submission Preview}}
+\author{{A. Placeholder\thanks{{Department of Verified Templates, Placeholder Institute, verified@example.org.}}
+\and B. Example\thanks{{Journal Systems Lab, Example University.}}}}
+\begin{{document}}
+\maketitle
+\begin{{abstract}}
+This submission-style preview is rendered with the imported official SIAM package. The content remains placeholder text, but the page is intentionally structured as a realistic mathematics-oriented manuscript so theorem style, front matter, section flow, and bibliography treatment are easier to inspect.
+\end{{abstract}}
+\begin{{keywords}}
+template verification, SIAM style, manuscript preview
+\end{{keywords}}
+\begin{{AMS}}
+65K10, 93C95
+\end{{AMS}}
+\section{{Introduction}}
+The introduction is written as compact technical prose so the preview reads more like a practical SIAM submission than a generic display page.
+\section{{Related Work}}
+The related-work section is explicit so the preview reveals how literature framing, methods, and experiments separate within the family baseline.
+\section{{Methodology}}
+The methodology section introduces representative notation and a theorem-style block so the imported SIAM package can be inspected under more realistic technical content.
+\begin{{equation}}
+\mathcal{{L}} = \sum_{{i=1}}^{{M}} w_i \left\| y_i - \hat{{y}}_i \right\|_2^2.
+\end{{equation}}
+\section{{Experiments}}
+The experiments section provides enough structure to expose quantitative comparison rhythm and table treatment inside the SIAM family baseline.
+\section{{Conclusion and Discussion}}
+This page verifies the imported official SIAM package path while preserving the six-part manuscript skeleton requested for the library.
+\begin{{thebibliography}}{{9}}
+\bibitem{{ref1}} A. Smith and B. Lee, {{\em Template-aware SIAM manuscript preparation}}, Placeholder Journal, 1 (2026), pp.~1--10.
+\end{{thebibliography}}
+\end{{document}}
+"""
+
+
+def build_iop_tex(title: str) -> str:
+    return rf"""
+\documentclass{{iopjournal}}
+\begin{{document}}
+\articletype{{Research Article}}
+\title{{{title}: Official IOP Submission Preview}}
+\author{{A. Placeholder$^1$ and B. Example$^2$}}
+\affil{{$^1$Department of Verified Templates, Placeholder Institute, City, Country}}
+\affil{{$^2$Journal Systems Lab, Example University, City, Country}}
+\email{{verified@example.org}}
+\keywords{{template verification, IOP style, manuscript preview}}
+\begin{{abstract}}
+This submission-style preview is rendered with the imported official IOP journal article package. The content remains placeholder text, but the page is intentionally structured as a realistic physics-oriented manuscript so front matter, section flow, figure-table rhythm, and end sections are easier to inspect.
+\end{{abstract}}
+\section{{Introduction}}
+The introduction is written as compact technical prose so the preview reads more like a practical IOP submission than a generic display page.
+\section{{Related Work}}
+The related-work section is explicit so the preview reveals how literature framing, methods, and experiments separate within the family baseline.
+\section{{Methodology}}
+The methodology section introduces representative notation and a figure placeholder so the imported IOP package can be inspected under more realistic technical content.
+\begin{{equation}}
+\mathcal{{L}} = \sum_{{i=1}}^{{M}} w_i \left\| y_i - \hat{{y}}_i \right\|_2^2.
+\end{{equation}}
+\section{{Experiments}}
+The experiments section provides enough structure to expose quantitative comparison rhythm and table treatment inside the IOP family baseline.
+\section{{Conclusion and Discussion}}
+This page verifies the imported official IOP package path while preserving the six-part manuscript skeleton requested for the library.
+\ack{{Placeholder acknowledgment.}}
+\funding{{Placeholder funding statement.}}
+\data{{Placeholder data availability statement.}}
+\section*{{References}}
+\begin{{thebibliography}}{{9}}
+\bibitem{{ref1}} A. Smith and B. Lee, {{\it Template-aware IOP manuscript preparation}}, Placeholder Journal 1 (2026) 1--10.
+\end{{thebibliography}}
 \end{{document}}
 """
 
@@ -1771,6 +2107,15 @@ def generate_verified(
     elif mode == "plos":
         tex = build_plos_tex(title)
         compile_with_workdir(tex, journal_dir, official_template_dir / "plos" / "template-package")
+    elif mode == "copernicus":
+        tex = build_copernicus_tex(title)
+        compile_with_workdir(tex, journal_dir, official_template_dir / "copernicus" / "template-package")
+    elif mode == "siam":
+        tex = build_siam_tex(title)
+        compile_with_workdir(tex, journal_dir, official_template_dir / "siam" / "template-package")
+    elif mode == "iop":
+        tex = build_iop_tex(title)
+        compile_with_workdir(tex, journal_dir, official_template_dir / "iop" / "template-package")
     else:
         raise ValueError(f"Unsupported compile mode: {mode}")
 

@@ -38,6 +38,9 @@ verification_checks:
   - id: "references-and-bibliography-style"
     title: "References and bibliography style"
     requirement: "Confirm whether the target journal expects BibTeX with the Copernicus style or manual bibliography handling."
+  - id: "journal-specific-note"
+    title: "Journal-specific note"
+    requirement: "Use this family baseline only when the exact Copernicus target journal has not yet been fixed; once the venue is known, tighten the manuscript against that journal's live guidance."
 notes:
   - "Verified against the official Copernicus LaTeX package stored in the local assets folder."
-  - "The family-level preview asset remains a conservative display page until a class-based family preview is rendered."
+  - "The family-level preview is rendered from the local Copernicus package rather than a generic starter profile."

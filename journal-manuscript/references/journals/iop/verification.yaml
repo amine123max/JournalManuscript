@@ -38,6 +38,9 @@ verification_checks:
   - id: "references-and-bibliography-style"
     title: "References and bibliography style"
     requirement: "Confirm the target IOP journal's bibliography workflow and reference formatting expectations."
+  - id: "journal-specific-note"
+    title: "Journal-specific note"
+    requirement: "Use this family baseline only when the exact IOP target journal has not yet been fixed; once the venue is known, tighten the manuscript against that title's live guidance."
 notes:
   - "Verified against the official IOP journal article template package stored in the local assets folder."
-  - "The family-level preview asset remains a conservative display page until a class-based family preview is rendered."
+  - "The family-level preview is rendered from the local IOP package rather than a generic starter profile."
