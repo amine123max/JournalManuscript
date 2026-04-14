@@ -5,8 +5,6 @@ for the journal profile library.
 
 ## Scripts
 
-- `import_official_guide_source_assets.py`: downloads the official guide-source files declared in every `verification.yaml` into `assets/official-templates/guides/`.
-- `import_official_elsevier_template_assets.py`: downloads and extracts the official Elsevier LaTeX packages from Elsevier's LaTeX instructions page into the local asset library.
 - `export_selective_skill_bundle.py`: exports a slim skill bundle that keeps only the shared core files, the selected family profiles, all journals under those families, and the referenced guide or template assets.
 - `scaffold_family_manuscript.py`: creates a `paper/` starter workspace from a supported family template baseline, including `main.tex`, `references.bib`, `CAPTION_BANK.md`, and manuscript subfolders.
 - `render_profile_preview_assets.py`: renders standardized
@@ -29,8 +27,6 @@ for the journal profile library.
 ```powershell
 python scripts/render_profile_preview_assets.py
 python scripts/render_profile_preview_assets.py --include ieee ieee-access plos-one
-python scripts/import_official_guide_source_assets.py
-python scripts/import_official_elsevier_template_assets.py
 python scripts/export_selective_skill_bundle.py --family ieee --archive
 python scripts/export_selective_skill_bundle.py --family elsevier --archive
 python scripts/scaffold_family_manuscript.py --family ieee --output-dir C:\work\my-paper
