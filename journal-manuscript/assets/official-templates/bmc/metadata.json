@@ -1,0 +1,8 @@
+{
+  "family": "bmc",
+  "status": "shared_downloaded_root",
+  "official_source": "https://www.biomedcentral.com/getpublished/manuscript-preparation",
+  "shared_from": "springer",
+  "package_root": "assets/official-templates/bmc/template-package",
+  "note": "BMC titles in this repository currently share the downloaded Springer Nature package root."
+}

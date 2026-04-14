@@ -1,0 +1,227 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[\protect\citeauthoryear{Hoch}{Hoch}{}]{Hoch2009}
+P.~Hoch.
+\newblock ``An arbitrary {L}agrangian-{E}ulerian strategy to solve compressible
+  fluid flows.''    Technical {R}eport, CEA, The address.
+\newblock HAL: hal-00366858.
+  https://hal.archives-ouvertes.fr/docs/00/36/68/58/PDF/ale2d.pdf. Accessed
+  January 13, (2016).
+
+\bibitem[\protect\citeauthoryear{Margolin and Shashkov}{Margolin and
+  Shashkov}{}]{Margolin2003}
+L.~G. Margolin, and M.~Shashkov.
+\newblock
+\newblock ``Second-order sign-preserving conservative interpolation (remapping)
+  on general grids.''  {\it J Comput Phys\/}~184, no. 1 (2003): 266--298.
+
+\bibitem[\protect\citeauthoryear{Kenamond and Burton}{Kenamond and
+  Burton}{}]{Kenamond2013}
+M.~A. Kenamond, and D.~E. Burton. September 2--6, 2013.
+\newblock ``Exact intersection remapping of multi-material domain-decomposed
+  polygonal meshes.''   Talk at {M}ultimat 2013, {I}nternational {C}onference
+  on {N}umerical {M}ethods for {M}ulti-{M}aterial {F}luid {F}lows, San
+  {F}rancisco, The organization.
+\newblock LA-UR-13-26794.
+
+\bibitem[\protect\citeauthoryear{Knupp}{Knupp}{}]{Knupp1999}
+P.~M. Knupp.
+\newblock
+\newblock ``Winslow smoothing on two-dimensional unstructured meshes.''  {\it
+  Eng {C}omput\/}15 (1999): 263--268.
+
+\bibitem[\protect\citeauthoryear{Kamm}{Kamm}{}]{Kamm2000}
+J.~Kamm 2000.
+\newblock ``Evaluation of the {S}edov-von {N}eumann-{T}aylor blast wave
+  solution.''    Technical {R}eport LA-UR-00-6055, Los {A}lamos {N}ational
+  {L}aboratory, The address.
+
+\bibitem[\protect\citeauthoryear{Benson}{Benson}{}]{Benson1992}
+D.~J. Benson.
+\newblock
+\newblock ``Computational methods in {L}agrangian and {E}ulerian hydrocodes.''
+  {\it Comput Method Appl M\/}~99, no. 2--3 (1992): 235--394.
+
+\bibitem[\protect\citeauthoryear{Hirt, Amsden, and Cook}{Hirt
+  et~al.}{}]{Hirt1974}
+C.~W. Hirt, A.~A. Amsden,, and J.~L. Cook.
+\newblock
+\newblock ``An arbitrary Lagrangian-Eulerian computing method for all flow
+  speeds.''  {\it J Comput Phys\/}~14, no. 3 (1974): 227--253.
+
+\bibitem[\protect\citeauthoryear{Caramana and Shashkov}{Caramana and
+  Shashkov}{}]{Caramana1998}
+E.~J. Caramana, and M.~J. Shashkov.
+\newblock
+\newblock ``Elimination of artificial grid distortion and hourglass-type
+  motions by means of {L}agrangian subzonal masses and pressures.''  {\it J
+  {C}omput {P}hys\/}~142, no. 2 (1998): 521--561.
+
+\bibitem[\protect\citeauthoryear{Mavriplis}{Mavriplis}{}]{Mavriplis2003}
+D.~J. Mavriplis June 23--26, 2003.
+\newblock ``Revisiting the least-squares procedure for gradient reconstruction
+  on unstructured meshes.''   AIAA 2003-3986. 16th {AIAA} {C}omputational
+  {F}luid {D}ynamics {C}onference, Orlando, {F}lorida, The organization.
+
+\bibitem[\protect\citeauthoryear{Scovazzi, Love, and Shashkov}{Scovazzi
+  et~al.}{}]{Scovazzi2008}
+G.~Scovazzi, E.~Love,, and M.~Shashkov.
+\newblock
+\newblock ``Multi-scale {L}agrangian shock hydrodynamics on {Q1/P0} finite
+  elements: {T}heoretical framework and two-dimensional computations.''  {\it
+  Comput {M}ethod {A}ppl {M}\/}~197, no. 9--12 (2008): 1056--1079.
+
+\bibitem[\protect\citeauthoryear{Shashkov}{Shashkov}{}]{Shashkov1996}
+M.~Shashkov 1996.
+\newblock {\it Conservative {F}inite-{D}ifference {M}ethods on {G}eneral
+  {G}rids},
+\newblock Boca Raton, Florida: CRC {P}ress.
+\newblock ISBN 0-8493-7375-1.
+
+\bibitem[\protect\citeauthoryear{Taylor and Green}{Taylor and
+  Green}{}]{Taylor1937}
+G.~I. Taylor, and A.~E. Green.
+\newblock
+\newblock ``Mechanism of the production of small eddies from large ones.''
+  {\it P {R}oy {S}oc {L}ond {A} {M}at\/}~158, no. 895 (1937): 499--521.
+\newblock \url{https://doi.org/10.1098/rspa.1937.0036},
+  \url{http://rspa.royalsocietypublishing.org/content/158/895/499}.
+
+\bibitem[\protect\citeauthoryear{Dukowicz}{Dukowicz}{}]{Dukowicz1984}
+J.~Dukowicz.
+\newblock
+\newblock ``Conservative rezoning (remapping) for general quadrilateral
+  meshes.''  {\it J Comput Phys\/}~54, no. 3 (1984): 411--424.
+
+\bibitem[\protect\citeauthoryear{Kucharik and Shashkov}{Kucharik and
+  Shashkov}{}]{Kucharik2012}
+M.~Kucharik, and M.~Shashkov.
+\newblock
+\newblock ``One-step hybrid remapping algorithm for multi-material arbitrary
+  {L}agrangian-{E}ulerian methods.''  {\it J Comput Phys\/}~231, no. 7 (2012):
+  2851--2864.
+
+\bibitem[\protect\citeauthoryear{Burton, Kenamond, Morgan, Carney, Shashkov,
+  and Author}{Burton et~al.}{}]{Burton2013}
+D.~E. Burton, M.~A. Kenamond, N.~R. Morgan, T.~C. Carney, M.~J. Shashkov,, and
+  A.~B. Author. September 2--6, 2013.
+\newblock ``An intersection based {ALE} scheme {(xALE)} for cell centered
+  hydrodynamics {(CCH)}.''   Talk at {M}ultimat 2013, {I}nternational
+  {C}onference on {N}umerical {M}ethods for {M}ulti-{M}aterial {F}luid {F}lows,
+  San {F}rancisco, The Organization.
+\newblock LA-UR-13-26756.2.
+
+\bibitem[\protect\citeauthoryear{Berndt, Breil, Galera, Kucharik, Maire, and
+  Shashkov}{Berndt et~al.}{}]{Berndt2011}
+M.~Berndt, J.~Breil, S.~Galera, M.~Kucharik, P.~H. Maire,, and M.~Shashkov.
+\newblock
+\newblock ``Two-step hybrid conservative remapping for multimaterial arbitrary
+  {L}agrangian-{E}ulerian methods.''  {\it J Comput Phys\/}~230, no. 17 (2011):
+  6664--6687.
+
+\bibitem[\protect\citeauthoryear{Breil, Alcin, and Maire}{Breil
+  et~al.}{}]{Breil2015}
+J.~Breil, H.~Alcin,, and P.~H. Maire.
+\newblock
+\newblock ``A swept intersection-based remapping method for axisymmetric
+  {ReALE} computation.''  {\it Int J Numer Meth Fl\/}~77, no. 11 (2015):
+  694--706.
+\newblock Fld.3996.
+
+\bibitem[\protect\citeauthoryear{Barth}{Barth}{}]{Barth1997}
+T.~J. Barth 1997.
+\newblock ``Numerical methods for gasdynamic systems on unstructured meshes.''
+   In {\it An {I}ntroduction to {R}ecent {D}evelopments in {T}heory and
+  {N}umerics for {C}onservation {L}aws, {P}roceedings of the {I}nternational
+  {S}chool on {T}heory and {N}umerics for {C}onservation {L}aws}, edited by
+  D.~Kroner, C.~Rohde, and M.~Ohlberger, Lecture {N}otes in {C}omputational
+  {S}cience and {E}ngineering, Berlin: Springer.
+\newblock ISBN 3-540-65081-4.
+
+\bibitem[\protect\citeauthoryear{Liska, Shashkov, Vachal, Wendroff, Author,
+  Author, and Author}{Liska et~al.}{}]{Liska2010}
+R.~Liska, M.~Shashkov, P.~Vachal, B.~Wendroff, A.~B. Author, B.~B. Author,, and
+  C.~C. Author.
+\newblock
+\newblock ``Optimization-based synchronized flux-corrected conservative
+  interpolation (remapping) of mass and momentum for arbitrary
+  {L}agrangian-{E}ulerian methods.''  {\it J {C}omput {P}hys\/}~229, no. 5
+  (2010): 1467--1497.
+
+\bibitem[\protect\citeauthoryear{Kucharik, Shashkov, and Wendroff}{Kucharik
+  et~al.}{}]{Kucharik2003}
+M.~Kucharik, M.~Shashkov,, and B.~Wendroff.
+\newblock
+\newblock ``An efficient linearity-and-bound-preserving remapping method.''
+  {\it J {C}omput {P}hys\/}~188, no. 2 (2003): 462--471.
+
+\bibitem[\protect\citeauthoryear{Blanchard and Loubere}{Blanchard and
+  Loubere}{}]{Blanchard2015}
+G.~Blanchard, and R.~Loubere. 2015.
+\newblock ``High-Order {C}onservative {R}emapping with a posteriori {MOOD}
+  stabilization on polygonal meshes.''   Details on how published,
+  \url{https://hal.archives-ouvertes.fr/hal-01207156}, the {HAL} {O}pen
+  {A}rchive, hal-01207156. (accessed: January 13, 2016).
+
+\bibitem[\protect\citeauthoryear{Lauritzen, Erath, and Mittal}{Lauritzen
+  et~al.}{}]{Lauritzen2011}
+P.~Lauritzen, C.~Erath,, and R.~Mittal.
+\newblock
+\newblock ``On simplifying `incremental remap'-based transport schemes.''  {\it
+  J {C}omput {P}hys\/}~230, no. 22 (2011): 7957--7963.
+
+\bibitem[\protect\citeauthoryear{Klima, Kucharik, and Shashkov}{Klima
+  et~al.}{}]{Klima2017}
+M.~Klima, M.~Kucharik,, and M.~Shashkov.
+\newblock
+\newblock ``Local error analysis and comparison of the swept- and
+  intersection-based remapping methods.''  {\it Commun {C}omput {P}hys\/}~21,
+  no. 2 (2017): 526--558.
+
+\bibitem[\protect\citeauthoryear{Dukowicz and Baumgardner}{Dukowicz and
+  Baumgardner}{}]{Dukowicz2000}
+J.~K. Dukowicz, and J.~R. Baumgardner.
+\newblock
+\newblock ``Incremental remapping as a transport/advection algorithm.''  {\it J
+  {C}omput {P}hys\/}~160, no. 1 (2000): 318--335.
+
+\bibitem[\protect\citeauthoryear{Kucharik and Shashkov}{Kucharik and
+  Shashkov}{}]{Kucharik2011}
+M.~Kucharik, and M.~Shashkov. 2011.
+\newblock ``Flux-based approach for conservative remap of multi-material
+  quantities in {2D} arbitrary {L}agrangian-{E}ulerian simulations.''   In {\it
+  Finite {V}olumes for {C}omplex {A}pplications {VI} {P}roblems \&
+  {P}erspectives}, edited by J.~Fo\v{r}t, J.~F{\"{u}}rst, J.~Halama, R.~Herbin,
+  and F.~Hubert, Vol~1 of {\it Springer {P}roceedings in {M}athematics},
+  623--631.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Kucharik and Shashkov}{Kucharik and
+  Shashkov}{}]{Kucharik2014}
+M.~Kucharik, and M.~Shashkov.
+\newblock
+\newblock ``Conservative multi-material remap for staggered multi-material
+  arbitrary {L}agrangian-{E}ulerian methods.''  {\it J {C}omput {P}hys\/}258
+  (2014): 268--304.
+
+\bibitem[\protect\citeauthoryear{Loubere and Shashkov}{Loubere and
+  Shashkov}{}]{Loubere2005}
+R.~Loubere, and M.~Shashkov.
+\newblock
+\newblock ``A subcell remapping method on staggered polygonal grids for
+  arbitrary-{L}agrangian-{E}ulerian methods.''  {\it J {C}omput {P}hys\/}~209,
+  no. 1 (2005): 105--138.
+
+\bibitem[\protect\citeauthoryear{Margolin and Shashkov}{Margolin and
+  Shashkov}{}]{Margolin2002}
+L.~G. Margolin, and M.~Shashkov. 2002.
+\newblock ``Second-order sign-preserving remapping on general grids.''
+  Technical Report LA-UR-02-525, Los {A}lamos {N}ational {L}aboratory, The
+  address.
+
+\end{thebibliography}

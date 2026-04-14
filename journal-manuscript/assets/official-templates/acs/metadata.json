@@ -1,0 +1,18 @@
+{
+  "family": "acs",
+  "status": "downloaded_local_package",
+  "official_source": "https://pubs.acs.org/page/4authors/submission/tex.html",
+  "package_url": "https://mirrors.ctan.org/macros/latex/contrib/achemso.zip",
+  "archive": "achemso.zip",
+  "package_root": "assets/official-templates/acs/template-package",
+  "display_name": "ACS",
+  "structure_version": 1,
+  "selected_template": "template-package/achemso.cls",
+  "readme": "assets/official-templates/acs/README.md",
+  "shared_family_policy": "assets/official-templates/acs/shared-family-policy.md",
+  "entry_files": [
+    "template-package/achemso.cls",
+    "template-package/achemso/achemso-demo.tex",
+    "template-package/achemso/achemso.pdf"
+  ]
+}

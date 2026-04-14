@@ -1,0 +1,9 @@
+{
+  "slug": "robotics",
+  "official_source": "https://www.mdpi.com/journal/robotics/instructions",
+  "download_url": "https://res.mdpi.com/data/mdpi-author-layout-style-guide.pdf",
+  "content_type": "application/pdf",
+  "downloaded_file": "official-guide-source.pdf",
+  "downloaded_at_utc": "2026-04-14T11:49:37.993804+00:00",
+  "note": "Downloaded the official MDPI author layout style guide because the Robotics instructions page is access-controlled for command-line clients in this environment."
+}

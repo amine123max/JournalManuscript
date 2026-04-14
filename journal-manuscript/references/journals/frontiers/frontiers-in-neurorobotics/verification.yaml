@@ -1,0 +1,20 @@
+slug: "frontiers-in-neurorobotics"
+display_name: "Frontiers in Neurorobotics"
+status: "verified"
+verification_scope: "official-template-package"
+template_family: "Frontiers official LaTeX template package"
+official_source: "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip"
+compile_mode: "frontiers"
+artifacts:
+  tex: "./official_preview.tex"
+  pdf: "./official_preview.pdf"
+  png: "./official_preview.png"
+official_template_import:
+  source_page: "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip"
+  package_url: "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip"
+  local_package_root: "assets/official-templates/frontiers/template-package"
+  selected_template: "frontiers.tex"
+  class_file: "FrontiersinHarvard.cls"
+notes:
+  - "Verified against the official Frontiers LaTeX template package downloaded into the local assets folder."
+  - "Reference-style selection may still need a final journal-specific check, but the preview uses the actual Frontiers class files."

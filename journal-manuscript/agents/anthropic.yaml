@@ -1,0 +1,20 @@
+provider:
+  id: "anthropic"
+  display_name: "Claude Portability"
+  native_support_in_codex: false
+  shared_loading_config: "./shared-journal-loading.yaml"
+
+prompt_contract:
+  recommended_system_role: "Journal manuscript formatting and revision specialist."
+  entry_prompt: "Use the Journal Manuscript skill rules, then resolve the journal through the shared journal-profile loader before editing."
+  trigger_alias: "Journal Manuscript"
+  stable_handle: "journal-manuscript"
+  canonical_pattern: "skill=journal-manuscript journal=<journal-slug> task=<what to do>"
+
+loading_contract:
+  loader_id: "journal-profile-loader-v1"
+  use_shared_resolution_order: true
+
+notes:
+  - "Claude wrappers should inject the selected journal profile into the working context by following shared-journal-loading.yaml."
+  - "Prefer official template files or author guides before doing high-risk layout edits."

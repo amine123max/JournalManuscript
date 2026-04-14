@@ -1,0 +1,18 @@
+{
+  "family": "elsevier",
+  "status": "downloaded_local_package",
+  "official_source": "https://www.elsevier.com/en-gb/researcher/author/policies-and-guidelines/latex-instructions",
+  "package_url": "https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip",
+  "archive": "downloads/elsarticle.zip",
+  "package_root": "assets/official-templates/elsevier/template-package",
+  "display_name": "Elsevier",
+  "structure_version": 1,
+  "selected_template": "template-package/elsarticle/elsarticle/elsarticle-template-num.tex",
+  "readme": "assets/official-templates/elsevier/README.md",
+  "shared_family_policy": "assets/official-templates/elsevier/shared-family-policy.md",
+  "entry_files": [
+    "template-package/elsarticle/elsarticle/elsarticle.cls",
+    "template-package/elsarticle/elsarticle/elsarticle-template-num.tex",
+    "template-package/els-cas-templates/els-cas-templates/cas-dc-template.tex"
+  ]
+}

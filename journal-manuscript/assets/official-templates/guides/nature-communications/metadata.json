@@ -1,0 +1,9 @@
+{
+  "slug": "nature-communications",
+  "official_source": "https://www.nature.com/ncomms/for-authors/formatting-guide",
+  "download_url": "https://www.nature.com/documents/ncomms-formatting-instructions.pdf",
+  "content_type": "application/pdf",
+  "downloaded_file": "official-guide-source.pdf",
+  "downloaded_at_utc": "2026-04-14T11:49:28.383305+00:00",
+  "note": "Downloaded the official Nature Communications formatting-instructions PDF because the page URL in verification redirects in a loop for command-line clients."
+}

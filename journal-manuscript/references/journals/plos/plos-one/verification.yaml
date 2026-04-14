@@ -1,0 +1,20 @@
+slug: "plos-one"
+display_name: "PLOS ONE"
+status: "verified"
+verification_scope: "official-template-package"
+template_family: "PLOS official LaTeX manuscript template"
+official_source: "https://journals.plos.org/plosone/s/latex"
+compile_mode: "plos"
+artifacts:
+  tex: "./official_preview.tex"
+  pdf: "./official_preview.pdf"
+  png: "./official_preview.png"
+official_template_import:
+  source_page: "https://journals.plos.org/plosone/s/latex"
+  package_url: ""
+  local_package_root: "assets/official-templates/plos/template-package"
+  selected_template: "plos_latex_template.tex"
+  class_file: ""
+notes:
+  - "Verified against the official PLOS LaTeX manuscript template package downloaded into the local assets folder."
+  - "The preview honors the manuscript-style restriction that figures should be treated as separate submission assets."

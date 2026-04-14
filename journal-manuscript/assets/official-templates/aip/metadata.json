@@ -1,0 +1,18 @@
+{
+  "family": "aip",
+  "status": "downloaded_local_package",
+  "official_source": "https://publishing.aip.org/resources/researchers/author-instructions/",
+  "package_url": "https://mirrors.ctan.org/macros/latex/contrib/revtex.zip",
+  "archive": "revtex.zip",
+  "package_root": "assets/official-templates/aip/template-package",
+  "display_name": "AIP",
+  "structure_version": 1,
+  "selected_template": "template-package/revtex/revtex4-2.cls",
+  "readme": "assets/official-templates/aip/README.md",
+  "shared_family_policy": "assets/official-templates/aip/shared-family-policy.md",
+  "entry_files": [
+    "template-package/revtex/revtex4-2.cls",
+    "template-package/revtex/sample/aip/aiptemplate.tex",
+    "template-package/revtex/aip/aipguide4-2.pdf"
+  ]
+}

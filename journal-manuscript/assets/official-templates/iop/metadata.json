@@ -1,0 +1,19 @@
+{
+  "family": "iop",
+  "status": "downloaded_local_package",
+  "official_source": "https://publishingsupport.iopscience.iop.org/questions/latex-template/",
+  "note": "Downloaded from the official IOP journal article LaTeX template page.",
+  "package_url": "https://publishingsupport.iopscience.iop.org/wp-content/uploads/2025/07/ioplatextemplate.zip",
+  "archive": "ioplatextemplate.zip",
+  "package_root": "assets/official-templates/iop/template-package",
+  "display_name": "IOP",
+  "structure_version": 1,
+  "selected_template": "template-package/iopjournal-template.tex",
+  "readme": "assets/official-templates/iop/README.md",
+  "shared_family_policy": "assets/official-templates/iop/shared-family-policy.md",
+  "entry_files": [
+    "template-package/iopjournal.cls",
+    "template-package/iopjournal-template.tex",
+    "template-package/iopjournal-guidelines.pdf"
+  ]
+}

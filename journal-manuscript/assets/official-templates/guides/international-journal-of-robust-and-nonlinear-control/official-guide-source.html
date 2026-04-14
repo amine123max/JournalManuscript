@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-appid="bffd2150-a03e-42e5-a531-50594dae57e3">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link href="/asset/cdn/fonts/OpenSans/OpenSans.css" rel="stylesheet">
+    <link href="/asset/cdn/fonts/Lato/Lato.css" rel="stylesheet">
+    <link href="/asset/cdn/fonts/Montserrat/Montserrat.css" rel="stylesheet">
+    <title>Author Services</title>
+    <script src="/browser-support/assets/js/check-browser.js" data-project-key="as" id="15e1d77e-0a65-4317-a16e-decdbf1b7d0b"></script>
+
+    <link href="/asset/cdn/as-common.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let osanoObserver = new MutationObserver(() => {
+                const osanoMessageContainer = document.querySelector('span.osano-cm-content__message.osano-cm-message');
+                if (osanoMessageContainer) {
+                    console.debug('~~~~~~~~~~~~~~~~~~ ip from ~~~~~~~~~~~~~~~~~~~', Osano?.cm?.jurisdiction);
+                }
+                if (osanoMessageContainer && Osano?.cm?.jurisdiction.toLowerCase().startsWith('us')) {
+                    osanoMessageContainer.innerHTML = 'This website uses various technologies, including third-party cookies and codes, to personalize our website functionalities, measure website usage and performance and provide targeting advertising, information about your website visit may be stored or shared with third parties as identified in our <a href=\'https://www.wiley.com/en-us/privacy\'>Privacy Policy</a>. By continuing to use the website, you consent to the <a href=\'https://www.wiley.com/en-us/privacy\'>Privacy Policy</a> and <a href=\'https://www.wiley.com/en-us/terms-of-use\'>Terms of Use</a>. To learn more and manage cookies, please refer to our <a href=\'https://www.wiley.com/en-us/privacy/cookies\'>Cookie Statement</a>.';
+
+                    const osanoBannerLink = document.querySelector('a.osano-cm-storage-policy.osano-cm-content__link.osano-cm-link');
+                    osanoBannerLink.remove();
+
+                    isOsanoMessageUpdate = true;
+                    osanoObserver.disconnect();
+                    console.debug('~~~~~~~~~~~~~~~~~~ message updated ~~~~~~~~~~~~~~~~~~~')
+                }
+            });
+
+            osanoObserver.observe(document, {
+                childList: true,
+                subtree: true,
+            });
+        });
+    </script>
+    <script>
+        if (window.location.hostname.indexOf('mock-env-') < 0 && window.location.hostname.indexOf('localhost') < 0) {
+            var script = document.createElement('script');
+            script.src = 'https://cmp.osano.com/AzZdRbSORDOOzF9W/5539e33d-d2fa-47c2-a7a9-e799e24f6df2/osano.js';
+            script.onload = function() {
+                if (window.Osano) {
+                    window.Osano.cm.addEventListener("osano-cm-script-blocked", function (item) {
+                        console.log("Script blocked: " + item);
+                    });
+                    window.Osano.cm.addEventListener("osano-cm-cookie-blocked", function (item) {
+                        console.log("Cookie blocked: " + item);
+                    });
+                }
+            }
+            document.head.appendChild(script);
+        }
+    </script>
+
+    <script>
+        window.digitalData={};
+        if(!(digitalData.event && digitalData.event.push)){
+            digitalData.event = [];
+        }
+    </script>
+    <script src="/dynatrace-snippet.js"></script>
+</head>
+<body>
+    <div id="AS__imitation"></div>
+    <div id="as-main-container">
+        <div id="as-main">
+            <div id="AS__menu" class="is-loading" style="min-height: 75px"><div class='menu_loader'></div></div>
+            <div id="dialog-modal"></div>
+            <div id="banner-messages-container"></div>
+            <div id="content" class="anchor-scrollToContent-top"></div>
+            <div id="waitingDialog"></div>
+            <div id="AS__footer"></div>
+            <div id="AS__info"></div>
+            <div id="selenium-ajax-indicator"></div>
+
+            <script>
+                document.body.style.display = 'flex';
+                document.body.style.flexDirection = 'column';
+                document.getElementById('content').style.flexGrow = '1';
+            </script>
+            <script src="/asset/cdn/js/jquery/jquery-3.7.1.slim.min.js"></script>
+            <script src="/spa/4.1.3-3a595ce09/index.js"></script>
+
+            <script>
+                function hideDefaultIcon() {
+                    const cookieIcons = document.getElementsByClassName("osano-cm-window__widget osano-cm-widget");
+                    if (cookieIcons.length) {
+                        cookieIcons[0].style.display = "none";
+                    }
+                }
+                window.setTimeout(hideDefaultIcon, 0);
+            </script>
+            <!-- Adobe Analytics: body bottom (including after all other scripts loaded at body bottom) -->
+            <script type="text/javascript">
+                if(window._satellite){_satellite.pageBottom();}
+            </script>
+        </div>
+    </div>
+</body>
+</html>

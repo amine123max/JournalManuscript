@@ -1,0 +1,18 @@
+{
+  "family": "acm",
+  "status": "downloaded_local_package",
+  "official_source": "https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex",
+  "package_url": "https://mirrors.ctan.org/macros/latex/contrib/acmart.zip",
+  "archive": "acmart.zip",
+  "package_root": "assets/official-templates/acm/template-package",
+  "display_name": "ACM",
+  "structure_version": 1,
+  "selected_template": "template-package/acmart.cls",
+  "readme": "assets/official-templates/acm/README.md",
+  "shared_family_policy": "assets/official-templates/acm/shared-family-policy.md",
+  "entry_files": [
+    "template-package/acmart.cls",
+    "template-package/acmart/acmguide.pdf",
+    "template-package/acmart/acmart.pdf"
+  ]
+}

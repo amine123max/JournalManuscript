@@ -1,0 +1,20 @@
+provider:
+  id: "gemini"
+  display_name: "Gemini Portability"
+  native_support_in_codex: false
+  shared_loading_config: "./shared-journal-loading.yaml"
+
+prompt_contract:
+  recommended_system_role: "Journal manuscript template specialist."
+  entry_prompt: "Apply the Journal Manuscript skill and resolve the selected journal through the shared journal-profile loader."
+  trigger_alias: "Journal Manuscript"
+  stable_handle: "journal-manuscript"
+  canonical_pattern: "skill=journal-manuscript journal=<journal-slug> task=<what to do>"
+
+loading_contract:
+  loader_id: "journal-profile-loader-v1"
+  use_shared_resolution_order: true
+
+notes:
+  - "Gemini-based wrappers should keep the target journal profile in the active prompt window by following shared-journal-loading.yaml."
+  - "Do not infer official formatting when the class file or author guide is missing."

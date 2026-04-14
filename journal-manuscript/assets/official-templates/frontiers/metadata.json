@@ -1,0 +1,22 @@
+{
+  "slug": "frontiers",
+  "package_url": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
+  "local_package_root": "assets/official-templates/frontiers",
+  "selected_template": "template-package/frontiers.tex",
+  "sharing_tier": "reusable_local_template_package",
+  "note": "This package can be reused as a Frontiers family baseline, but title-level specialty and reporting requirements still need journal-specific confirmation.",
+  "family": "frontiers",
+  "display_name": "Frontiers",
+  "structure_version": 1,
+  "status": "downloaded_local_package",
+  "official_source": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
+  "archive": "Frontiers_LaTeX_Templates.zip",
+  "package_root": "assets/official-templates/frontiers/template-package",
+  "readme": "assets/official-templates/frontiers/README.md",
+  "shared_family_policy": "assets/official-templates/frontiers/shared-family-policy.md",
+  "entry_files": [
+    "template-package/frontiers.tex",
+    "template-package/FrontiersinHarvard.cls",
+    "template-package/FrontiersinVancouver.cls"
+  ]
+}

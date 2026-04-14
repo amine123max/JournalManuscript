@@ -1,0 +1,169 @@
+{
+  "aaas": {
+    "status": "guide_only",
+    "official_source": "https://www.science.org/content/page/science-information-authors",
+    "note": "No stable public family-level LaTeX package was confirmed in this environment."
+  },
+  "acm": {
+    "status": "downloaded_local_package",
+    "official_source": "https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex",
+    "package_url": "https://mirrors.ctan.org/macros/latex/contrib/acmart.zip",
+    "archive": "acmart.zip",
+    "package_root": "assets/official-templates/acm/template-package"
+  },
+  "acs": {
+    "status": "downloaded_local_package",
+    "official_source": "https://pubs.acs.org/page/4authors/submission/tex.html",
+    "package_url": "https://mirrors.ctan.org/macros/latex/contrib/achemso.zip",
+    "archive": "achemso.zip",
+    "package_root": "assets/official-templates/acs/template-package"
+  },
+  "aip": {
+    "status": "downloaded_local_package",
+    "official_source": "https://publishing.aip.org/resources/researchers/author-instructions/",
+    "package_url": "https://mirrors.ctan.org/macros/latex/contrib/revtex.zip",
+    "archive": "revtex.zip",
+    "package_root": "assets/official-templates/aip/template-package"
+  },
+  "bmc": {
+    "status": "shared_downloaded_root",
+    "official_source": "https://www.biomedcentral.com/getpublished/manuscript-preparation",
+    "shared_from": "springer",
+    "package_root": "assets/official-templates/bmc/template-package",
+    "note": "BMC titles in this repository currently share the downloaded Springer Nature package root."
+  },
+  "cambridge": {
+    "status": "guide_only",
+    "official_source": "https://www.cambridge.org/core/services/authors/journals/journal-layout-and-templates",
+    "note": "Cambridge exposes journal-level template pages, but no single family package was confirmed in this environment."
+  },
+  "cell-press": {
+    "status": "guide_only",
+    "official_source": "https://www.cell.com/authors",
+    "note": "No stable public family-level template package was confirmed in this environment."
+  },
+  "copernicus": {
+    "status": "downloaded_local_package",
+    "official_source": "https://publications.copernicus.org/for_authors/manuscript_preparation.html",
+    "package_url": "https://publications.copernicus.org/Copernicus_LaTeX_Package.zip",
+    "archive": "Copernicus_LaTeX_Package.zip",
+    "package_root": "assets/official-templates/copernicus/template-package"
+  },
+  "custom-journal": {
+    "status": "synthetic_no_official_template",
+    "official_source": "",
+    "note": "Custom journal is a staging family and has no official publisher package."
+  },
+  "de-gruyter": {
+    "status": "guide_only",
+    "official_source": "https://www.degruyter.com/publishing/for-authors/manuscript-preparation",
+    "note": "No stable public family-level LaTeX package was confirmed in this environment."
+  },
+  "elsevier": {
+    "status": "downloaded_local_package",
+    "official_source": "https://www.elsevier.com/en-gb/researcher/author/policies-and-guidelines/latex-instructions",
+    "package_url": "https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip",
+    "archive": "downloads/elsarticle.zip",
+    "package_root": "assets/official-templates/elsevier/elsarticle/elsarticle"
+  },
+  "emerald": {
+    "status": "guide_only",
+    "official_source": "https://www.emeraldgrouppublishing.com/how-to/authoring-your-paper",
+    "note": "No stable public family-level LaTeX package was confirmed in this environment."
+  },
+  "frontiers": {
+    "status": "downloaded_local_package",
+    "official_source": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
+    "package_url": "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip",
+    "archive": "Frontiers_LaTeX_Templates.zip",
+    "package_root": "assets/official-templates/frontiers"
+  },
+  "hindawi": {
+    "status": "guide_only",
+    "official_source": "https://www.hindawi.com/journals/complexity/guidelines/",
+    "note": "No stable public family-level LaTeX package was confirmed in this environment."
+  },
+  "ieee": {
+    "status": "downloaded_local_package",
+    "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
+    "package_url": "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip",
+    "archive": "IEEEtran.zip",
+    "package_root": "assets/official-templates/ieee/template-package"
+  },
+  "iop": {
+    "status": "downloaded_local_package",
+    "official_source": "https://publishingsupport.iopscience.iop.org/questions/latex-template/",
+    "note": "Downloaded from the official IOP journal article LaTeX template page.",
+    "package_url": "https://publishingsupport.iopscience.iop.org/wp-content/uploads/2025/07/ioplatextemplate.zip",
+    "archive": "ioplatextemplate.zip",
+    "package_root": "assets/official-templates/iop/template-package"
+  },
+  "mdpi": {
+    "status": "blocked",
+    "official_source": "https://www.mdpi.com/authors/latex",
+    "note": "The MDPI guide was access-restricted in this environment and no reusable local family package could be confirmed."
+  },
+  "nas": {
+    "status": "guide_only",
+    "official_source": "https://www.pnas.org/author-center/new-author-guide",
+    "note": "No stable public family-level LaTeX package was confirmed in this environment."
+  },
+  "nature-portfolio": {
+    "status": "shared_downloaded_root",
+    "official_source": "https://www.nature.com/nature-portfolio/for-authors/formatting-guide",
+    "shared_from": "springer",
+    "package_root": "assets/official-templates/nature-portfolio/template-package",
+    "note": "Nature Portfolio titles in this repository currently share the downloaded Springer Nature package root."
+  },
+  "optica-publishing": {
+    "status": "guide_only",
+    "official_source": "https://opg.optica.org/submit/templates/default.cfm",
+    "note": "Optica exposes title-level template guidance, but no single family package was confirmed in this environment."
+  },
+  "oxford": {
+    "status": "guide_only",
+    "official_source": "https://academic.oup.com/journals/pages/authors/preparing_your_manuscript",
+    "note": "Oxford exposes journal-level preparation pages, but no single family package was confirmed in this environment."
+  },
+  "plos": {
+    "status": "downloaded_local_package",
+    "official_source": "https://journals.plos.org/plosone/s/latex",
+    "archive": "PLOS_Author_Template.zip",
+    "package_root": "assets/official-templates/plos"
+  },
+  "royal-society": {
+    "status": "guide_only",
+    "official_source": "https://royalsocietypublishing.org/for-authors/author-guidelines",
+    "note": "Royal Society exposes author guidance, but no single reusable family package was confirmed in this environment."
+  },
+  "sage": {
+    "status": "guide_only",
+    "official_source": "https://journals.sagepub.com/author-instructions",
+    "note": "SAGE exposes journal-level author instruction pages, but no single family package was confirmed in this environment."
+  },
+  "siam": {
+    "status": "downloaded_local_package",
+    "official_source": "https://www.siam.org/publications/journals/authors/",
+    "package_url": "https://tug.ctan.org/macros/latex/contrib/siam/siamltex.zip",
+    "archive": "siamltex.zip",
+    "package_root": "assets/official-templates/siam/template-package"
+  },
+  "springer": {
+    "status": "downloaded_local_package",
+    "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+    "package_url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
+    "archive": "springer-nature-template.zip",
+    "package_root": "assets/official-templates/springer/template-package/sn-article-template"
+  },
+  "taylor-francis": {
+    "status": "guide_only",
+    "official_source": "https://authorservices.taylorandfrancis.com/publishing-your-research/using-latex/",
+    "note": "Taylor and Francis guidance exists, but a stable family package download was not confirmed automatically in this environment."
+  },
+  "wiley": {
+    "status": "downloaded_local_package",
+    "official_source": "https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/LaTeX/index.html",
+    "archive": "WileyDesign.zip",
+    "package_root": "assets/official-templates/wiley/template-package"
+  }
+}

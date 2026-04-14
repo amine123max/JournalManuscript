@@ -1,0 +1,17 @@
+slug: "robotics"
+display_name: "Robotics"
+status: "blocked"
+verification_scope: "blocked-missing-template-asset"
+template_family: "MDPI official journal template"
+official_source: "https://www.mdpi.com/journal/robotics/instructions"
+official_guide_asset: "assets/official-templates/guides/robotics/official-guide-source.pdf"
+official_guide_download_url: "https://res.mdpi.com/data/mdpi-author-layout-style-guide.pdf"
+official_guide_note: "Downloaded the official MDPI author layout style guide because the Robotics instructions page is access-controlled for command-line clients in this environment."
+compile_mode: "blocked"
+artifacts:
+  tex: ""
+  pdf: ""
+  png: ""
+notes:
+  - "Official MDPI template assets were not available locally and direct retrieval was blocked in this environment."
+  - "This journal cannot be honestly marked template-verified until the official MDPI template package is added."

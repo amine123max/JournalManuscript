@@ -1,0 +1,20 @@
+provider:
+  id: "local-llm"
+  display_name: "Local LLM Portability"
+  native_support_in_codex: false
+  shared_loading_config: "./shared-journal-loading.yaml"
+
+prompt_contract:
+  recommended_system_role: "Local journal manuscript assistant with external profile loading."
+  entry_prompt: "Use the Journal Manuscript skill instructions and resolve the selected journal through the shared journal-profile loader."
+  trigger_alias: "Journal Manuscript"
+  stable_handle: "journal-manuscript"
+  canonical_pattern: "skill=journal-manuscript journal=<journal-slug> task=<what to do>"
+
+loading_contract:
+  loader_id: "journal-profile-loader-v1"
+  use_shared_resolution_order: true
+
+notes:
+  - "Best used with a local gateway or orchestration layer that can inject selected profile files by following shared-journal-loading.yaml."
+  - "Local models may need shorter context windows, so load only one journal profile at a time."

@@ -1,0 +1,20 @@
+provider:
+  id: "openrouter"
+  display_name: "OpenRouter Portability"
+  native_support_in_codex: false
+  shared_loading_config: "./shared-journal-loading.yaml"
+
+prompt_contract:
+  recommended_system_role: "Portable journal manuscript skill wrapper."
+  entry_prompt: "Route this request through the Journal Manuscript skill and resolve the journal through the shared journal-profile loader."
+  trigger_alias: "Journal Manuscript"
+  stable_handle: "journal-manuscript"
+  canonical_pattern: "skill=journal-manuscript journal=<journal-slug> task=<what to do>"
+
+loading_contract:
+  loader_id: "journal-profile-loader-v1"
+  use_shared_resolution_order: true
+
+notes:
+  - "OpenRouter adapters can map this skill onto whichever upstream model is selected."
+  - "The adapter should enforce the shared journal-resolution order explicitly because Codex-only metadata will not be read automatically."

@@ -1,0 +1,18 @@
+{
+  "family": "copernicus",
+  "status": "downloaded_local_package",
+  "official_source": "https://publications.copernicus.org/for_authors/manuscript_preparation.html",
+  "package_url": "https://publications.copernicus.org/Copernicus_LaTeX_Package.zip",
+  "archive": "Copernicus_LaTeX_Package.zip",
+  "package_root": "assets/official-templates/copernicus/template-package",
+  "display_name": "Copernicus",
+  "structure_version": 1,
+  "selected_template": "template-package/template.tex",
+  "readme": "assets/official-templates/copernicus/README.md",
+  "shared_family_policy": "assets/official-templates/copernicus/shared-family-policy.md",
+  "entry_files": [
+    "template-package/copernicus.cls",
+    "template-package/template.tex",
+    "template-package/README_copernicus_package_7_14.txt"
+  ]
+}

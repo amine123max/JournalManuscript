@@ -1,0 +1,102 @@
+version: 1
+summary:
+  rule: "Family templates may be reused as drafting baselines, but journal-specific author guidance still overrides the family baseline."
+tiers:
+  reusable_local_template_package:
+    meaning: "A local package or class root exists under assets/official-templates and may be reused across sibling journals as the baseline manuscript source."
+  reusable_family_class_without_local_package_root:
+    meaning: "An official family class path is stable and reusable, but the repository has not yet materialized a publisher-side package root in assets/official-templates."
+  guide_only_or_blocked:
+    meaning: "The family is not yet ready to be treated as a reusable local package baseline in this repository."
+families:
+  ieee:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/ieee/template-package"
+    selected_template: "bare_jrnl.tex"
+    official_source: "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+    note: "Reuse IEEEtran across sibling journals, then tighten target-journal author-page rules."
+  acm:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/acm/template-package"
+    selected_template: "acmart.cls and the downloaded ACM package samples"
+    official_source: "https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex"
+    note: "Reuse acmart as the baseline, then adjust journal code and submission mode."
+  acs:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/acs/template-package"
+    selected_template: "achemso.cls and achemso-demo.tex"
+    official_source: "https://pubs.acs.org/page/4authors/submission/tex.html"
+    note: "Reuse achemso as the baseline, then adjust article mode and chemistry-specific front matter."
+  aip:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/aip/template-package"
+    selected_template: "revtex4-2.cls and aiptemplate.tex"
+    official_source: "https://publishing.aip.org/resources/researchers/author-instructions/"
+    note: "Reuse REVTeX as the baseline, then adjust journal option and article constraints."
+  copernicus:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/copernicus/template-package"
+    selected_template: "template.tex"
+    official_source: "https://publications.copernicus.org/for_authors/manuscript_preparation.html"
+    note: "Reuse the Copernicus package as the baseline, then confirm journal-specific article metadata and bibliography rules."
+  elsevier:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/elsevier/template-package"
+    selected_template: "elsarticle-template-num.tex or elsarticle-template-harv.tex"
+    official_source: "https://www.elsevier.com/en-gb/researcher/author/policies-and-guidelines/latex-instructions"
+    note: "Reuse elsarticle or CAS as the baseline, then match citation mode and front matter."
+  springer:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/springer/template-package"
+    selected_template: "sn-article.tex"
+    official_source: "https://www.springernature.com/gp/authors/campaigns/latex-author-support"
+    note: "Reuse sn-jnl as the baseline, then match title-specific style options."
+  frontiers:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/frontiers/template-package"
+    selected_template: "frontiers.tex"
+    official_source: "https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip"
+    note: "Reuse the Frontiers package as the baseline, then confirm specialty-specific reporting sections."
+  plos:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/plos/template-package"
+    selected_template: "plos_latex_template.tex"
+    official_source: "https://journals.plos.org/plosone/s/latex"
+    note: "Reuse the PLOS manuscript package as the baseline, then confirm title-specific reporting requirements."
+  wiley:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/wiley/template-package"
+    selected_template: "Optimal-Design-layout.tex"
+    official_source: "https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/LaTeX/index.html"
+    note: "Local package assets exist, but this family is not yet wired into the verified rendering flow."
+  iop:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/iop/template-package"
+    selected_template: "iopart.cls and the official journal article sample"
+    official_source: "https://publishingsupport.iopscience.iop.org/questions/latex-template/"
+    note: "Reuse the downloaded IOP package as a baseline with caution because some IOP titles do not require authors to submit in that exact class format."
+  siam:
+    tier: reusable_local_template_package
+    shared_baseline_allowed: true
+    local_asset_root: "assets/official-templates/siam/template-package"
+    selected_template: "lexample.tex"
+    official_source: "https://www.siam.org/publications/journals/authors/"
+    note: "Reuse the SIAM package as the baseline, then confirm the target title's current author instructions."
+  mdpi:
+    tier: guide_only_or_blocked
+    shared_baseline_allowed: false
+    local_asset_root: ""
+    selected_template: ""
+    official_source: "https://www.mdpi.com/authors/latex"
+    note: "Guidance exists, but the repository does not yet have a reusable local MDPI package path suitable for honest family-wide verification."

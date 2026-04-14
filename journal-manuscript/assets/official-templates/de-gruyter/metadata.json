@@ -1,0 +1,6 @@
+{
+  "family": "de-gruyter",
+  "status": "guide_only",
+  "official_source": "https://www.degruyter.com/publishing/for-authors/manuscript-preparation",
+  "note": "No stable public family-level LaTeX package was confirmed in this environment."
+}

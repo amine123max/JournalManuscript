@@ -1,0 +1,6 @@
+{
+  "family": "sage",
+  "status": "guide_only",
+  "official_source": "https://journals.sagepub.com/author-instructions",
+  "note": "SAGE exposes journal-level author instruction pages, but no single family package was confirmed in this environment."
+}

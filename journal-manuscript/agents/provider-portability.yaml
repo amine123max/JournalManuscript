@@ -1,0 +1,40 @@
+portability:
+  skill_name: "journal-manuscript"
+  display_name: "Journal Manuscript"
+  purpose: "Cross-provider portability hints for reusing this skill outside native Codex/OpenAI runtimes."
+  active_runtime_note: "Codex natively consumes agents/openai.yaml. The rest of this file is for external adapters or manual routing."
+  shared_loading_config: "./shared-journal-loading.yaml"
+
+invocation_contract:
+  canonical_pattern: "skill=journal-manuscript journal=<journal-slug> task=<what to do>"
+  examples:
+    - "skill=journal-manuscript journal=ieee-tro task=Rewrite the introduction in the current house style."
+    - "skill=journal-manuscript journal=ocean-engineering task=Reformat the manuscript toward Elsevier submission style."
+
+core_rules:
+  - "Preserve the target journal class, front matter, citation style, and required end sections."
+  - "Do not treat preview images as proof of official compliance."
+  - "Prefer official class files or official author guides over inferred formatting."
+  - "When the target journal is unknown, start from the repository IEEE baseline."
+
+providers:
+  - id: "openai"
+    config_file: "./openai.yaml"
+    native_support: true
+    note: "Primary native skill metadata for Codex/OpenAI, but it should still follow the shared loader contract."
+  - id: "anthropic"
+    config_file: "./anthropic.yaml"
+    native_support: false
+    note: "Claude wrapper should read the shared loader config and apply the same journal resolution order."
+  - id: "gemini"
+    config_file: "./gemini.yaml"
+    native_support: false
+    note: "Gemini wrapper should read the shared loader config and apply the same journal resolution order."
+  - id: "openrouter"
+    config_file: "./openrouter.yaml"
+    native_support: false
+    note: "OpenRouter adapters should route different models through the same shared loader contract."
+  - id: "local-llm"
+    config_file: "./local-llm.yaml"
+    native_support: false
+    note: "Local gateways should inject the selected journal profile using the same shared loader contract."

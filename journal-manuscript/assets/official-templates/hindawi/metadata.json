@@ -1,0 +1,6 @@
+{
+  "family": "hindawi",
+  "status": "guide_only",
+  "official_source": "https://www.hindawi.com/journals/complexity/guidelines/",
+  "note": "No stable public family-level LaTeX package was confirmed in this environment."
+}

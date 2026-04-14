@@ -1,0 +1,18 @@
+{
+  "family": "siam",
+  "status": "downloaded_local_package",
+  "official_source": "https://www.siam.org/publications/journals/authors/",
+  "package_url": "https://tug.ctan.org/macros/latex/contrib/siam/siamltex.zip",
+  "archive": "siamltex.zip",
+  "package_root": "assets/official-templates/siam/template-package",
+  "display_name": "SIAM",
+  "structure_version": 1,
+  "selected_template": "template-package/lexample.tex",
+  "readme": "assets/official-templates/siam/README.md",
+  "shared_family_policy": "assets/official-templates/siam/shared-family-policy.md",
+  "entry_files": [
+    "template-package/siamltex.cls",
+    "template-package/lexample.tex",
+    "template-package/siam.bst"
+  ]
+}

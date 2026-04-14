@@ -1,0 +1,44 @@
+shared_loader:
+  id: "journal-profile-loader-v1"
+  display_name: "Shared Journal Profile Loader"
+  purpose: "One provider-neutral journal profile loading contract reused across OpenAI, Claude, Gemini, OpenRouter, and local LLM wrappers."
+
+invocation_contract:
+  stable_handle: "journal-manuscript"
+  required_inputs:
+    - "journal_slug"
+    - "task"
+  optional_inputs:
+    - "provider_id"
+    - "verification_mode"
+    - "use_official_preview"
+  canonical_pattern: "skill=journal-manuscript journal=<journal-slug> task=<what to do>"
+
+resolution_order:
+  - "../references/journals/slug-paths.json"
+  - "../references/journals/<family>/<journal_slug>/verification.yaml"
+  - "../references/journals/<family>/<journal_slug>/layout-checklist.md"
+  - "../references/journals/<family>/<journal_slug>/official_preview.tex"
+  - "../references/journals/<family>/<journal_slug>/profile.md"
+  - "../references/journals/catalog.md"
+  - "../references/journals/ieee/verification.yaml"
+  - "../references/journals/ieee/profile.md"
+  - "../references/journal-profiles.md"
+  - "../references/house-style.md"
+  - "../SKILL.md"
+
+resolution_rules:
+  - "Resolve `journal_slug` through `slug-paths.json` first, then prefer the located `verification.yaml` and `official_preview` assets."
+  - "If verification.yaml exists and status is verified, prefer the official_preview artifacts and official template notes."
+  - "If verification.yaml includes journal_specific_validation or verification_checks, load layout-checklist.md before claiming journal-specific compliance."
+  - "If verification.yaml exists and status is blocked, use profile.md and surface the block reason explicitly."
+  - "Family slugs are valid inputs and should load the family baseline when the user wants a new manuscript scaffold or the target title is not yet fixed. Child journal slugs must first resolve through `slug-paths.json`."
+  - "If the journal slug is unknown, consult catalog.md and fall back to the verified IEEE family baseline under references/journals/ieee/ before using repository-wide IEEE notes."
+  - "Load only one concrete journal profile at a time to keep context small."
+
+output_rules:
+  - "Preserve the target journal class, front matter, citation style, and required end sections."
+  - "Do not claim compliance from style previews alone."
+  - "When an official_preview asset exists alongside verification.yaml, state that it is official-template verified."
+  - "When journal-specific manual checks remain, state that the layout checklist is still required."
+  - "When only a starter profile exists, state that it is a starter profile and not fully verified."

@@ -1,0 +1,8 @@
+interface:
+  display_name: "Journal Manuscript"
+  short_description: "Maintain journal manuscript layout and style"
+  brand_color: "#1D4ED8"
+  default_prompt: "Use $journal-manuscript to draft, revise, or reformat this paper in the active journal manuscript style."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,31 @@
+{
+  "slug": "ieee",
+  "template_selector_url": "https://template-selector.ieee.org/",
+  "author_center_url": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
+  "package_url": "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip",
+  "local_package_root": "assets/official-templates/ieee/template-package",
+  "selected_template": "template-package/bare_jrnl.tex",
+  "section_skeleton": [
+    "Introduction",
+    "Related Work",
+    "Methodology",
+    "Experiments",
+    "Conclusion and Discussion",
+    "References"
+  ],
+  "note": "IEEE Author Center points authors to Template Selector. In this environment, the selector backend did not expose a stable downloadable package endpoint for automation, so the local asset import uses the public CTAN distribution of the IEEEtran package while keeping IEEE Author Center as the governing guide source.",
+  "family": "ieee",
+  "display_name": "IEEE",
+  "structure_version": 1,
+  "status": "downloaded_local_package",
+  "official_source": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/",
+  "archive": "IEEEtran.zip",
+  "package_root": "assets/official-templates/ieee/template-package",
+  "readme": "assets/official-templates/ieee/README.md",
+  "shared_family_policy": "assets/official-templates/ieee/shared-family-policy.md",
+  "entry_files": [
+    "template-package/IEEEtran.cls",
+    "template-package/bare_jrnl.tex",
+    "template-package/bare_jrnl_compsoc.tex"
+  ]
+}

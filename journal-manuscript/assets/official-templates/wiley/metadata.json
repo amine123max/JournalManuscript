@@ -1,0 +1,24 @@
+{
+  "slug": "wiley",
+  "official_source": "https://authorservices.wiley.com/author-resources/Journal-Authors/Prepare/LaTeX/index.html",
+  "local_package_root": "assets/official-templates/wiley/template-package",
+  "selected_template": "template-package/Optimal-Design-layout/Optimal-Design-layout.tex",
+  "archive_file": "assets/official-templates/wiley/WileyDesign.zip",
+  "sharing_tier": "reusable_local_template_package",
+  "integration_state": "local_package_present_not_yet_wired_into_verification_flow",
+  "note": "The Wiley package exists locally and is suitable as a family baseline, but the repository does not yet treat Wiley as a rendered verified family package.",
+  "family": "wiley",
+  "display_name": "Wiley",
+  "structure_version": 1,
+  "status": "downloaded_local_package",
+  "package_url": "https://authors.wiley.com/asset/WileyDesign.zip",
+  "archive": "WileyDesign.zip",
+  "package_root": "assets/official-templates/wiley/template-package",
+  "readme": "assets/official-templates/wiley/README.md",
+  "shared_family_policy": "assets/official-templates/wiley/shared-family-policy.md",
+  "entry_files": [
+    "template-package/Optimal-Design-layout/Optimal-Design-layout.tex",
+    "template-package/Optimal-Design-layout/USG.cls",
+    "template-package/Author-guidelines for LaTex Template_Wiley (2026).pdf"
+  ]
+}

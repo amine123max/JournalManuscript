@@ -1,0 +1,18 @@
+{
+  "family": "springer",
+  "status": "downloaded_local_package",
+  "official_source": "https://www.springernature.com/gp/authors/campaigns/latex-author-support",
+  "package_url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
+  "archive": "springer-nature-template.zip",
+  "package_root": "assets/official-templates/springer/template-package",
+  "display_name": "Springer Nature",
+  "structure_version": 1,
+  "selected_template": "template-package/sn-article-template/sn-article.tex",
+  "readme": "assets/official-templates/springer/README.md",
+  "shared_family_policy": "assets/official-templates/springer/shared-family-policy.md",
+  "entry_files": [
+    "template-package/sn-article-template/sn-article.tex",
+    "template-package/sn-article-template/sn-jnl.cls",
+    "template-package/sn-article-template/user-manual.pdf"
+  ]
+}

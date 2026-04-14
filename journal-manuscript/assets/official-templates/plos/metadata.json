@@ -1,0 +1,22 @@
+{
+  "slug": "plos",
+  "official_source": "https://journals.plos.org/plosone/s/latex",
+  "local_package_root": "assets/official-templates/plos",
+  "selected_template": "template-package/plos_latex_template.tex",
+  "sharing_tier": "reusable_local_template_package",
+  "note": "This repository uses the PLOS ONE LaTeX guidance as the local PLOS family baseline because PLOS exposes LaTeX guidance through title-facing pages.",
+  "family": "plos",
+  "display_name": "PLOS",
+  "structure_version": 1,
+  "status": "downloaded_local_package",
+  "package_url": "",
+  "archive": "PLOS_Author_Template.zip",
+  "package_root": "assets/official-templates/plos/template-package",
+  "readme": "assets/official-templates/plos/README.md",
+  "shared_family_policy": "assets/official-templates/plos/shared-family-policy.md",
+  "entry_files": [
+    "template-package/plos_latex_template.tex",
+    "template-package/plos_latex_template.pdf",
+    "template-package/plos2025.bst"
+  ]
+}
